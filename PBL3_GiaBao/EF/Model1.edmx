@@ -234,7 +234,7 @@
           <Property Name="idPhongChieu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Phim" Relationship="Self.FK__DinhDangP__idPhi__35BCFE0A" FromRole="DinhDangPhim" ToRole="Phim" />
           <NavigationProperty Name="PhongChieu" Relationship="Self.FK__DinhDangP__idPho__36B12243" FromRole="DinhDangPhim" ToRole="PhongChieu" />
-          <NavigationProperty Name="LichChieux" Relationship="Self.FK__LichChieu__idDin__3A81B327" FromRole="DinhDangPhim" ToRole="LichChieu" />
+          <NavigationProperty Name="LichChieu" Relationship="Self.FK__LichChieu__idDin__3A81B327" FromRole="DinhDangPhim" ToRole="LichChieu" />
         </EntityType>
         <EntityType Name="LichChieu">
           <Key>

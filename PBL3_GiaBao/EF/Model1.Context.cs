@@ -26,11 +26,11 @@ namespace PBL3_GiaBao.EF
         }
     
         public virtual DbSet<DinhDangPhim> DinhDangPhims { get; set; }
-        public virtual DbSet<LichChieu> LichChieux { get; set; }
+        public virtual DbSet<LichChieu> LichChieu { get; set; }
         public virtual DbSet<LoaiManHinh> LoaiManHinhs { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<Phim> Phims { get; set; }
-        public virtual DbSet<PhongChieu> PhongChieux { get; set; }
+        public virtual DbSet<PhongChieu> PhongChieu { get; set; }
         public virtual DbSet<TaiKhoan> TaiKhoans { get; set; }
         public virtual DbSet<TheLoai> TheLoais { get; set; }
         public virtual DbSet<Ve> Ves { get; set; }

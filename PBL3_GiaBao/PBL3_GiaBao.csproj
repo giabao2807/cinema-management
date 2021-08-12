@@ -55,8 +55,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\BLLPhongChieuView.cs" />
     <Compile Include="BLL\BLL_DinhDangPhim.cs" />
     <Compile Include="BLL\BLL_LichChieu.cs" />
+    <Compile Include="BLL\BLL_LichChieuView1.cs" />
     <Compile Include="BLL\BLL_LoaiManHinh.cs" />
     <Compile Include="BLL\BLL_NhanVien.cs" />
     <Compile Include="BLL\BLL_Phim.cs" />
@@ -67,17 +69,21 @@
     <Compile Include="BLL\BLL_Ve.cs" />
     <Compile Include="DAL\DAL_DinhDangPhim.cs" />
     <Compile Include="DAL\DAL_LichChieu.cs" />
+    <Compile Include="DAL\DAL_LichChieuView1.cs" />
     <Compile Include="DAL\DAL_LoaiManHinh.cs" />
     <Compile Include="DAL\DAL_NhanVien.cs" />
     <Compile Include="DAL\DAL_Phim.cs" />
     <Compile Include="DAL\DAL_PhimView.cs" />
     <Compile Include="DAL\DAL_PhongChieu.cs" />
+    <Compile Include="DAL\DAL_PhongChieuView.cs" />
     <Compile Include="DAL\DAL_TaiKhoan.cs" />
     <Compile Include="DAL\DAL_TheLoai.cs" />
     <Compile Include="DAL\DAL_Ve.cs" />
     <Compile Include="DTO\CBBItem.cs" />
     <Compile Include="DTO\LichChieuView.cs" />
+    <Compile Include="DTO\LichChieuView1.cs" />
     <Compile Include="DTO\PhimView.cs" />
+    <Compile Include="DTO\PhongChieuView.cs" />
     <Compile Include="EF\DinhDangPhim.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
