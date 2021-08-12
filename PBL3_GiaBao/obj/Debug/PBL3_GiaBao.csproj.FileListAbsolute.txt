@@ -1,0 +1,332 @@
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe.config
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.pdb
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.dll
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.xml
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csprojAssemblyReference.cache
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.Properties.Resources.resources
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDatGhe.resources
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fGhe.resources
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLichChieu.resources
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLogin.resources
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fNhanVien.resources
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fPhongChieu.resources
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanly.resources
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanlyphim.resources
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheloai.resources
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fThongTinFilm.resources
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.GenerateResource.cache
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CoreCompileInputs.cache
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CopyComplete
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.exe
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.pdb
+C:\Users\Gia Bao\source\repos\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fAccount.resources
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe.config
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.pdb
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.dll
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.dll
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.xml
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.xml
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csprojAssemblyReference.cache
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.Properties.Resources.resources
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fAccount.resources
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDatGhe.resources
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fGhe.resources
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLichChieu.resources
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLogin.resources
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fNhanVien.resources
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fPhongChieu.resources
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanly.resources
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanlyphim.resources
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheloai.resources
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fThongTinFilm.resources
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.GenerateResource.cache
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CoreCompileInputs.cache
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CopyComplete
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.exe
+E:\Year 2\Semester 2 year 2\Đồ án kì 4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.pdb
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csprojAssemblyReference.cache
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.exe
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.pdb
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.Properties.Resources.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fAccount.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fControl.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDoiMK.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLichChieu.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLogin.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fNhanVien.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fPhongChieu.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanly.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanlyphim.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheloai.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.GenerateResource.cache
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CoreCompileInputs.cache
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe.config
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.pdb
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.dll
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.xml
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gia Bao\Downloads\OneDrive_2021-05-27\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CopyComplete
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.Properties.Resources.resources
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fAccount.resources
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fControl.resources
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDoiMK.resources
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLichChieu.resources
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLogin.resources
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fNhanVien.resources
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fPhongChieu.resources
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanly.resources
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanlyphim.resources
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheloai.resources
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.exe
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.pdb
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe.config
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.pdb
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CopyComplete
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanLyVe.resources
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fSeller.resources
+C:\Users\Administrator\Desktop\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheatre.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe.config
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.pdb
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.dll
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.xml
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csprojAssemblyReference.cache
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.Properties.Resources.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fAccount.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fControl.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDoiMK.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLichChieu.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLogin.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fNhanVien.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fPhongChieu.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanly.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanlyphim.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanLyVe.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fSeller.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheatre.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheloai.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.GenerateResource.cache
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CoreCompileInputs.cache
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CopyComplete
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.exe
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.pdb
+C:\Users\Pho Dac Biet\Downloads\PBL3_2\PBL3\Đồ Án kì 2 năm 2\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.Form1.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csprojAssemblyReference.cache
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.exe
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.pdb
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe.config
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.pdb
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.dll
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.dll
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.xml
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.xml
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.Properties.Resources.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fAccount.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fControl.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDoiMK.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLichChieu.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLogin.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fNhanVien.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fPhongChieu.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanly.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanlyphim.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanLyVe.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fSeller.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheatre.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheloai.resources
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.GenerateResource.cache
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CoreCompileInputs.cache
+D:\BKDN\KI_4\PBL3_GiaBao\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CopyComplete
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe.config
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.pdb
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.Properties.Resources.resources
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fAccount.resources
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fControl.resources
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDoiMK.resources
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLichChieu.resources
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLogin.resources
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fNhanVien.resources
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fPhongChieu.resources
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanly.resources
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanlyphim.resources
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanLyVe.resources
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fSeller.resources
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheatre.resources
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheloai.resources
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CopyComplete
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.exe
+C:\Users\Administrator\Desktop\2th SEMESTER\PBL3\OneDrive_2021-05-29\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.pdb
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe.config
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.pdb
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.xml
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csprojAssemblyReference.cache
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.Properties.Resources.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fAccount.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fControl.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDoiMK.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLichChieu.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLogin.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fNhanVien.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fPhongChieu.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanly.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanlyphim.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanLyVe.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fSeller.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheatre.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheloai.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.GenerateResource.cache
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CoreCompileInputs.cache
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CopyComplete
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.exe
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.pdb
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionLichChieu.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionPhongChieu.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDinhDangPhim.resources
+C:\Users\Pho Dac Biet\Downloads\PBL_lastEdited_5_31_2021\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionDinhDangPhim.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csprojAssemblyReference.cache
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.exe
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.pdb
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.Properties.Resources.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fAccount.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDinhDangPhim.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionDinhDangPhim.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionLichChieu.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fControl.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDoiMK.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionPhongChieu.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLichChieu.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLogin.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fNhanVien.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fPhongChieu.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanly.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanlyphim.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanLyVe.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fSeller.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheatre.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheloai.resources
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.GenerateResource.cache
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CoreCompileInputs.cache
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe.config
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.pdb
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.dll
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.xml
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.xml
+D:\BKDN\Năm 2\KI_4\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CopyComplete
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csprojAssemblyReference.cache
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.Properties.Resources.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fAccount.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDinhDangPhim.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionDinhDangPhim.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionLichChieu.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fControl.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDoiMK.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionPhongChieu.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLichChieu.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLogin.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fNhanVien.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fPhongChieu.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanly.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanlyphim.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanLyVe.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fSeller.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheatre.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheloai.resources
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.GenerateResource.cache
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CoreCompileInputs.cache
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.exe
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.pdb
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe.config
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.pdb
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.xml
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gia Bao\Downloads\OneDrive_2021-06-07\Phiên bản cuối cùng (quá mệt)\Phiên bản cuối cùng (quá mệt)\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CopyComplete
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe.config
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.pdb
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.xml
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csprojAssemblyReference.cache
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.Properties.Resources.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fAccount.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDinhDangPhim.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionDinhDangPhim.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionLichChieu.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fControl.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDoiMK.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionPhongChieu.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLichChieu.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLogin.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fNhanVien.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fPhongChieu.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanly.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanlyphim.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanLyVe.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fSeller.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheatre.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheloai.resources
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.GenerateResource.cache
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CoreCompileInputs.cache
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CopyComplete
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.exe
+C:\Users\tranc\Desktop\PBL3_ThienBao\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.pdb
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe.config
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.exe
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\bin\Debug\PBL3_GiaBao.pdb
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.xml
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csprojAssemblyReference.cache
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.Properties.Resources.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fAccount.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDinhDangPhim.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionDinhDangPhim.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionLichChieu.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fControl.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fDoiMK.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fFunctionPhongChieu.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLichChieu.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fLogin.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fNhanVien.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fPhongChieu.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanly.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanlyphim.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fQuanLyVe.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fSeller.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheatre.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.View.fTheloai.resources
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.GenerateResource.cache
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CoreCompileInputs.cache
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.csproj.CopyComplete
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.exe
+C:\Users\Pho Dac Biet\Downloads\PBL3_ThienBaoViet[ZaloPC_Folder]\PBL3\PBL3_GiaBao\obj\Debug\PBL3_GiaBao.pdb
