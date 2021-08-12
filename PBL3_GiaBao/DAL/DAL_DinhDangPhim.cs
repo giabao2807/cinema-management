@@ -66,7 +66,7 @@ namespace PBL3_GiaBao.DAL
         }
         public List<DinhDangPhim> GetListFormatMovieByMovieAndDate_DAL(string movieID, DateTime date)
         {
-            var listLC = db.LichChieux.Where(p => p.ThoiGianChieu.Day.CompareTo(date.Day) == 0
+            var listLC = db.LichChieu.Where(p => p.ThoiGianChieu.Day.CompareTo(date.Day) == 0
                 && p.ThoiGianChieu.Month.CompareTo(date.Month) == 0 && p.ThoiGianChieu.Year.CompareTo(date.Year) == 0);
             List<DinhDangPhim> s = new List<DinhDangPhim>();
             foreach (LichChieu i in listLC)

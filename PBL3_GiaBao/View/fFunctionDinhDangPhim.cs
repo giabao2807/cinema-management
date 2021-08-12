@@ -23,6 +23,7 @@ namespace PBL3_GiaBao.View
             form = id;
             setData(id);
         }
+        #region LoadData 
         private void setData(string id)
         {
             setCBBPhim();
@@ -39,19 +40,19 @@ namespace PBL3_GiaBao.View
             }
 
         }
-
         private void setCBBPhim()
         {
             cbbPhim.DataSource = BLL_Phim.Instance.getAllPhimByBLL();
             cbbPhim.DisplayMember = "TenPhim";
         }
-
         private void setCBBPhongChieu()
         {
             cbbPhongChieu.DataSource = BLL_PhongChieu.Instance.getAllPhongChieuByBLL();
             cbbPhongChieu.DisplayMember = "TenPhong";
         }
+        #endregion
 
+        #region Button
         private void btnOK_Click(object sender, EventArgs e)
         {
             string tenPhong = ((PhongChieu)(cbbPhongChieu.SelectedItem)).TenPhong;
@@ -64,7 +65,7 @@ namespace PBL3_GiaBao.View
                 if (form != null)
                 {
                     BLL_DinhDangPhim.Instance.updateDinhDangPhim(maDinhDang, maPhong, maPhim);
-                    MessageBox.Show("Cập nhật định dạng phim thành công", "Thông báo");                    
+                    MessageBox.Show("Cập nhật định dạng phim thành công", "Thông báo");
                 }
                 else
                 {
@@ -76,9 +77,16 @@ namespace PBL3_GiaBao.View
             }
 
         }
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        #endregion
 
-        private bool checkData(string maDinhDang, string maPhong, string maPhim) {
-            if (BLL_DinhDangPhim.Instance.IsExitDinhDangPhimByMaDinhDang(maDinhDang))
+        #region Function
+        private bool checkData(string maDinhDang, string maPhong, string maPhim)
+        {
+            if (BLL_DinhDangPhim.Instance.IsExitDinhDangPhimByMaDinhDang(maDinhDang) && form == null)
             {
                 MessageBox.Show("Trùng mã định dạng phim", "Thông báo");
                 return false;
@@ -90,5 +98,6 @@ namespace PBL3_GiaBao.View
             }
             return true;
         }
+        #endregion
     }
 }

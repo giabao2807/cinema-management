@@ -33,16 +33,11 @@ namespace PBL3_GiaBao.View
             {
                 txtShowtimeID.Text = id;
                 txtShowtimeID.Enabled = false;
-            } 
-        } 
+            }
+        }
 
         private void setCBBMovie(string MaPhong)
         {
-            /*var data = from DinhDangPhim in BLL_DinhDangPhim.Instance.GetAllDinhDangPhim()
-                   from Phim in BLL_Phim.Instance.getAllPhimByBLL()
-                   where DinhDangPhim.idPhim == Phim.id
-                   && DinhDangPhim.idPhongChieu == MaPhong
-                   select new Phim(Phim);*/
             List<DinhDangPhim> ddp = BLL_DinhDangPhim.Instance.GetDinhDangPhimByMaPhong(MaPhong);
             List<Phim> lp = BLL_Phim.Instance.getListPhimByListDDP(ddp);
             cbbMovie.DataSource = lp.ToList();
@@ -90,18 +85,22 @@ namespace PBL3_GiaBao.View
                     return false;
                 }
             }
+            string maPhongChieu = BLL_DinhDangPhim.Instance.getIDphongChieubyIdDinhDang(maDinhDang);
             Phim p = BLL_Phim.Instance.getPhimByIdPhim(maPhim);
-            if (time < p.NgayKhoiChieu || time > p.NgayKetThuc)
+            if ((time < p.NgayKhoiChieu || time > p.NgayKetThuc)
+                || !(BLL_LichChieu.Instance.checkDataLichChieu(maPhongChieu, maPhim, time)))
             {
                 MessageBox.Show("Thời gian chiếu không hợp lệ", "Thông báo");
                 return false;
             }
-            if (BLL_LichChieu.Instance.isExitDataLichChieu(maDinhDang, time))
-            {
-                MessageBox.Show("Trùng dữ liệu lịch chiếu", "Thông báo");
-                return false;
-            }
             return true;
+        }
+
+
+        private void checkDateTime(string maDinhDang, DateTime time)
+        {
+            string maPhongChieu = BLL_DinhDangPhim.Instance.getIDphongChieubyIdDinhDang(maDinhDang);
+
         }
 
         private void buttonExit_Click(object sender, EventArgs e)

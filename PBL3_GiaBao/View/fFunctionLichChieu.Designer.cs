@@ -37,14 +37,14 @@ namespace PBL3_GiaBao.View
             this.label5 = new System.Windows.Forms.Label();
             this.dtmShowtimeDate = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbbMovie = new System.Windows.Forms.ComboBox();
+            this.cbbCinema = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtScreenTypeName_Showtime = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtShowtimeID = new System.Windows.Forms.TextBox();
-            this.cbbCinema = new System.Windows.Forms.ComboBox();
-            this.cbbMovie = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -104,8 +104,9 @@ namespace PBL3_GiaBao.View
             // dtmShowtimeTime
             // 
             this.dtmShowtimeTime.CalendarFont = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtmShowtimeTime.CustomFormat = "  HH:mm";
             this.dtmShowtimeTime.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.dtmShowtimeTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtmShowtimeTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtmShowtimeTime.Location = new System.Drawing.Point(177, 71);
             this.dtmShowtimeTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtmShowtimeTime.Name = "dtmShowtimeTime";
@@ -153,6 +154,27 @@ namespace PBL3_GiaBao.View
             this.groupBox1.TabIndex = 80;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin lịch chiếu";
+            // 
+            // cbbMovie
+            // 
+            this.cbbMovie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbMovie.FormattingEnabled = true;
+            this.cbbMovie.Location = new System.Drawing.Point(181, 167);
+            this.cbbMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbbMovie.Name = "cbbMovie";
+            this.cbbMovie.Size = new System.Drawing.Size(256, 34);
+            this.cbbMovie.TabIndex = 63;
+            // 
+            // cbbCinema
+            // 
+            this.cbbCinema.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbCinema.FormattingEnabled = true;
+            this.cbbCinema.Location = new System.Drawing.Point(181, 121);
+            this.cbbCinema.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbbCinema.Name = "cbbCinema";
+            this.cbbCinema.Size = new System.Drawing.Size(256, 34);
+            this.cbbCinema.TabIndex = 62;
+            this.cbbCinema.SelectedIndexChanged += new System.EventHandler(this.cbbCinema_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -210,27 +232,6 @@ namespace PBL3_GiaBao.View
             this.txtShowtimeID.Name = "txtShowtimeID";
             this.txtShowtimeID.Size = new System.Drawing.Size(256, 34);
             this.txtShowtimeID.TabIndex = 52;
-            // 
-            // cbbCinema
-            // 
-            this.cbbCinema.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbCinema.FormattingEnabled = true;
-            this.cbbCinema.Location = new System.Drawing.Point(181, 121);
-            this.cbbCinema.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbbCinema.Name = "cbbCinema";
-            this.cbbCinema.Size = new System.Drawing.Size(256, 34);
-            this.cbbCinema.TabIndex = 62;
-            this.cbbCinema.SelectedIndexChanged += new System.EventHandler(this.cbbCinema_SelectedIndexChanged);
-            // 
-            // cbbMovie
-            // 
-            this.cbbMovie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbMovie.FormattingEnabled = true;
-            this.cbbMovie.Location = new System.Drawing.Point(181, 167);
-            this.cbbMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbbMovie.Name = "cbbMovie";
-            this.cbbMovie.Size = new System.Drawing.Size(256, 34);
-            this.cbbMovie.TabIndex = 63;
             // 
             // fFunctionLichChieu
             // 

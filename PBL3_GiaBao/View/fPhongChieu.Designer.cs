@@ -31,7 +31,7 @@ namespace PBL3_GiaBao.View
         {
             this.dtgvCinema = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.cboCinemaScreenType = new System.Windows.Forms.ComboBox();
+            this.txtDisplay = new System.Windows.Forms.TextBox();
             this.lblScreenType = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.txtSeatsPerRow = new System.Windows.Forms.TextBox();
@@ -40,6 +40,7 @@ namespace PBL3_GiaBao.View
             this.txtNumberOfRows = new System.Windows.Forms.TextBox();
             this.lblNumberOfRows = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.txtCinemaStatus = new System.Windows.Forms.TextBox();
             this.lblCinemaStatus = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.txtCinemaSeats = new System.Windows.Forms.TextBox();
@@ -55,7 +56,6 @@ namespace PBL3_GiaBao.View
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.txtCinemaStatus = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCinema)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -77,26 +77,26 @@ namespace PBL3_GiaBao.View
             this.dtgvCinema.RowTemplate.Height = 24;
             this.dtgvCinema.Size = new System.Drawing.Size(985, 530);
             this.dtgvCinema.TabIndex = 9;
+            this.dtgvCinema.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvCinema_CellClick);
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.cboCinemaScreenType);
+            this.panel6.Controls.Add(this.txtDisplay);
             this.panel6.Controls.Add(this.lblScreenType);
             this.panel6.Location = new System.Drawing.Point(23, 156);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(412, 54);
+            this.panel6.Size = new System.Drawing.Size(419, 54);
             this.panel6.TabIndex = 11;
             // 
-            // cboCinemaScreenType
+            // txtDisplay
             // 
-            this.cboCinemaScreenType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboCinemaScreenType.FormattingEnabled = true;
-            this.cboCinemaScreenType.Location = new System.Drawing.Point(196, 6);
-            this.cboCinemaScreenType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cboCinemaScreenType.Name = "cboCinemaScreenType";
-            this.cboCinemaScreenType.Size = new System.Drawing.Size(215, 34);
-            this.cboCinemaScreenType.TabIndex = 1;
+            this.txtDisplay.Location = new System.Drawing.Point(197, 11);
+            this.txtDisplay.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDisplay.Name = "txtDisplay";
+            this.txtDisplay.ReadOnly = true;
+            this.txtDisplay.Size = new System.Drawing.Size(215, 34);
+            this.txtDisplay.TabIndex = 2;
             // 
             // lblScreenType
             // 
@@ -116,7 +116,7 @@ namespace PBL3_GiaBao.View
             this.panel15.Location = new System.Drawing.Point(23, 404);
             this.panel15.Margin = new System.Windows.Forms.Padding(4);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(412, 54);
+            this.panel15.Size = new System.Drawing.Size(419, 54);
             this.panel15.TabIndex = 12;
             // 
             // txtSeatsPerRow
@@ -124,6 +124,7 @@ namespace PBL3_GiaBao.View
             this.txtSeatsPerRow.Location = new System.Drawing.Point(196, 6);
             this.txtSeatsPerRow.Margin = new System.Windows.Forms.Padding(4);
             this.txtSeatsPerRow.Name = "txtSeatsPerRow";
+            this.txtSeatsPerRow.ReadOnly = true;
             this.txtSeatsPerRow.Size = new System.Drawing.Size(215, 34);
             this.txtSeatsPerRow.TabIndex = 1;
             // 
@@ -145,7 +146,7 @@ namespace PBL3_GiaBao.View
             this.panel12.Location = new System.Drawing.Point(23, 342);
             this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(412, 54);
+            this.panel12.Size = new System.Drawing.Size(419, 54);
             this.panel12.TabIndex = 13;
             // 
             // txtNumberOfRows
@@ -153,6 +154,7 @@ namespace PBL3_GiaBao.View
             this.txtNumberOfRows.Location = new System.Drawing.Point(196, 11);
             this.txtNumberOfRows.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumberOfRows.Name = "txtNumberOfRows";
+            this.txtNumberOfRows.ReadOnly = true;
             this.txtNumberOfRows.Size = new System.Drawing.Size(215, 34);
             this.txtNumberOfRows.TabIndex = 1;
             // 
@@ -174,8 +176,17 @@ namespace PBL3_GiaBao.View
             this.panel9.Location = new System.Drawing.Point(23, 281);
             this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(412, 54);
+            this.panel9.Size = new System.Drawing.Size(419, 54);
             this.panel9.TabIndex = 14;
+            // 
+            // txtCinemaStatus
+            // 
+            this.txtCinemaStatus.Location = new System.Drawing.Point(196, 6);
+            this.txtCinemaStatus.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCinemaStatus.Name = "txtCinemaStatus";
+            this.txtCinemaStatus.ReadOnly = true;
+            this.txtCinemaStatus.Size = new System.Drawing.Size(215, 34);
+            this.txtCinemaStatus.TabIndex = 1;
             // 
             // lblCinemaStatus
             // 
@@ -195,7 +206,7 @@ namespace PBL3_GiaBao.View
             this.panel8.Location = new System.Drawing.Point(23, 219);
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(412, 54);
+            this.panel8.Size = new System.Drawing.Size(419, 54);
             this.panel8.TabIndex = 15;
             // 
             // txtCinemaSeats
@@ -203,6 +214,7 @@ namespace PBL3_GiaBao.View
             this.txtCinemaSeats.Location = new System.Drawing.Point(196, 6);
             this.txtCinemaSeats.Margin = new System.Windows.Forms.Padding(4);
             this.txtCinemaSeats.Name = "txtCinemaSeats";
+            this.txtCinemaSeats.ReadOnly = true;
             this.txtCinemaSeats.Size = new System.Drawing.Size(215, 34);
             this.txtCinemaSeats.TabIndex = 1;
             // 
@@ -243,7 +255,7 @@ namespace PBL3_GiaBao.View
             this.panel31.Location = new System.Drawing.Point(23, 94);
             this.panel31.Margin = new System.Windows.Forms.Padding(4);
             this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(412, 54);
+            this.panel31.Size = new System.Drawing.Size(419, 54);
             this.panel31.TabIndex = 16;
             // 
             // txtCinemaName
@@ -251,6 +263,7 @@ namespace PBL3_GiaBao.View
             this.txtCinemaName.Location = new System.Drawing.Point(196, 6);
             this.txtCinemaName.Margin = new System.Windows.Forms.Padding(4);
             this.txtCinemaName.Name = "txtCinemaName";
+            this.txtCinemaName.ReadOnly = true;
             this.txtCinemaName.Size = new System.Drawing.Size(215, 34);
             this.txtCinemaName.TabIndex = 1;
             // 
@@ -280,9 +293,9 @@ namespace PBL3_GiaBao.View
             this.txtCinemaID.Location = new System.Drawing.Point(196, 10);
             this.txtCinemaID.Margin = new System.Windows.Forms.Padding(4);
             this.txtCinemaID.Name = "txtCinemaID";
+            this.txtCinemaID.ReadOnly = true;
             this.txtCinemaID.Size = new System.Drawing.Size(216, 34);
             this.txtCinemaID.TabIndex = 1;
-            this.txtCinemaID.TextChanged += new System.EventHandler(this.txtCinemaID_TextChanged);
             // 
             // lblCinemaID
             // 
@@ -347,14 +360,6 @@ namespace PBL3_GiaBao.View
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // txtCinemaStatus
-            // 
-            this.txtCinemaStatus.Location = new System.Drawing.Point(196, 6);
-            this.txtCinemaStatus.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCinemaStatus.Name = "txtCinemaStatus";
-            this.txtCinemaStatus.Size = new System.Drawing.Size(215, 34);
-            this.txtCinemaStatus.TabIndex = 1;
-            // 
             // fPhongChieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -395,7 +400,6 @@ namespace PBL3_GiaBao.View
 
         private System.Windows.Forms.DataGridView dtgvCinema;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.ComboBox cboCinemaScreenType;
         private System.Windows.Forms.Label lblScreenType;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.TextBox txtSeatsPerRow;
@@ -420,5 +424,6 @@ namespace PBL3_GiaBao.View
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox txtCinemaStatus;
+        private System.Windows.Forms.TextBox txtDisplay;
     }
 }

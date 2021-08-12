@@ -78,7 +78,7 @@ namespace PBL3_GiaBao.View
                     return false;
                 }
             }
-            else 
+            else
             {
                 PhongChieu pc = BLL_PhongChieu.Instance.GetPhongChieuByMaPhong(maPhong);
                 if (txtTenPhong.Text != pc.TenPhong)
@@ -88,7 +88,7 @@ namespace PBL3_GiaBao.View
                         MessageBox.Show("Trùng tên phòng chiếu!", "Thông báo");
                         return false;
                     }
-                } 
+                }
             }
             if (maPhong == "" || tenPhong == "" || soHangGhe == "" || gheMoiHang == "")
             {
@@ -114,13 +114,13 @@ namespace PBL3_GiaBao.View
             string soHangGhe = txtSoHangGhe.Text.Trim();
             string gheMoiHang = txtGheMoiHang.Text.Trim();
             string idMH = ((LoaiManHinh)(cbbManHinh.SelectedItem)).id;
-            int tinhTrang = (int)((CBBItem)(cbbTinhTrang.SelectedItem)).Value; 
+            int tinhTrang = (int)((CBBItem)(cbbTinhTrang.SelectedItem)).Value;
             if (checkData(maPhong, tenPhong, soHangGhe, gheMoiHang))
             {
                 string soChoNgoi = txtSoChoNgoi.Text.Trim();
                 if (form != null)
-                {           
-                    BLL.BLL_PhongChieu.Instance.updatePhongChieu(maPhong, tenPhong, idMH, int.Parse(soChoNgoi),tinhTrang ,int.Parse(soHangGhe), int.Parse(gheMoiHang));
+                {
+                    BLL.BLL_PhongChieu.Instance.updatePhongChieu(maPhong, tenPhong, idMH, int.Parse(soChoNgoi), tinhTrang, int.Parse(soHangGhe), int.Parse(gheMoiHang));
                     MessageBox.Show("Cập nhật phòng chiếu thành công", "Thông báo");
                 }
                 else
@@ -152,7 +152,7 @@ namespace PBL3_GiaBao.View
             {
                 txtSoChoNgoi.Text = "Error";
             }
-            else 
+            else
             {
                 int soChoNgoi = int.Parse(txtSoHangGhe.Text) * int.Parse(txtGheMoiHang.Text);
                 txtSoChoNgoi.Text = soChoNgoi.ToString();
@@ -173,7 +173,7 @@ namespace PBL3_GiaBao.View
             {
                 txtSoChoNgoi.Text = "Error";
             }
-            else 
+            else
             {
                 int soChoNgoi = int.Parse(txtSoHangGhe.Text) * int.Parse(txtGheMoiHang.Text);
                 txtSoChoNgoi.Text = soChoNgoi.ToString();

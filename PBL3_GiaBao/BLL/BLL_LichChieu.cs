@@ -99,5 +99,13 @@ namespace PBL3_GiaBao.BLL
         {
             return DAL_LichChieu.Instance.LoadListShowTimeByFilm( formatMovieID , date);
         }
+        public void CheckLichChieuExpired()
+        {
+            DAL_LichChieu.Instance.CheckLichChieuExpried();
+        }
+        public bool checkDataLichChieu(string maPhongChieu, string maPhim, DateTime time)
+        {
+            return DAL_LichChieu.Instance.checkDataLichChieu(maPhongChieu, maPhim, time);
+        }
     }
 }

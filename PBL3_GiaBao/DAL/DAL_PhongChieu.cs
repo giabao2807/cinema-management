@@ -40,25 +40,25 @@ namespace PBL3_GiaBao.DAL
         #region Function
         public List<PhongChieu> getAllPhongChieu()
         {
-            return db.PhongChieux.Select(pc => pc).ToList();
+            return db.PhongChieu.Select(pc => pc).ToList();
         }
         public List<PhongChieu> GetPhongChieusByIdMH(string IdMH)
         {
-            var data = db.PhongChieux.Where(pc => pc.idManHinh == IdMH);
+            var data = db.PhongChieu.Where(pc => pc.idManHinh == IdMH);
             return data.ToList();
         }
         public PhongChieu GetPhongChieuByMaPhong(string maPhong)
         {
-            return db.PhongChieux.Find(maPhong);
+            return db.PhongChieu.Find(maPhong);
         }
         public PhongChieu GetCinemaByName(string cinemaName)
         {
-            var l = db.PhongChieux.Where(p => p.TenPhong == cinemaName);
+            var l = db.PhongChieu.Where(p => p.TenPhong == cinemaName);
             return l.FirstOrDefault();
         }
         public bool addPhongChieu(string maPhong, string tenPhong, string idMH, int soChoNgoi, int tinhTrang, int soHangGhe, int soGheMoiHang)
         {
-            db.PhongChieux.Add(new PhongChieu
+            db.PhongChieu.Add(new PhongChieu
             {
                 id = maPhong,
                 TenPhong = tenPhong,
@@ -72,7 +72,7 @@ namespace PBL3_GiaBao.DAL
         }
         public bool updatePhongChieu(string maPhong, string tenPhong, string idMH, int soChoNgoi, int tinhTrang, int soHangGhe, int soGheMoiHang)
         {
-            var s = db.PhongChieux.Find(maPhong);
+            var s = db.PhongChieu.Find(maPhong);
             s.TenPhong = tenPhong;
             s.idManHinh = idMH;
             s.SoChoNgoi = soChoNgoi;
@@ -87,7 +87,7 @@ namespace PBL3_GiaBao.DAL
             {
                 if (pc.id == maPhong)
                 {
-                    db.PhongChieux.Remove(pc);
+                    db.PhongChieu.Remove(pc);
                     break;
                 }
             }
@@ -95,7 +95,7 @@ namespace PBL3_GiaBao.DAL
         }
         public bool IsExitPhongChieuByMaPhong(string maPhong)
         {
-            PhongChieu pc = db.PhongChieux.Find(maPhong);
+            PhongChieu pc = db.PhongChieu.Find(maPhong);
             return pc != null;
         }
 
@@ -105,8 +105,8 @@ namespace PBL3_GiaBao.DAL
             {
                 var d = db.DinhDangPhims.Where(ddp => ddp.idPhongChieu == maPhong);
                 db.DinhDangPhims.RemoveRange(d);
-                var p = db.PhongChieux.Find(maPhong);
-                db.PhongChieux.Remove(p);
+                var p = db.PhongChieu.Find(maPhong);
+                db.PhongChieu.Remove(p);
             }
             return db.SaveChanges() > 0;
         }

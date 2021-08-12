@@ -1,4 +1,5 @@
 ﻿using PBL3_GiaBao.BLL;
+using PBL3_GiaBao.DTO;
 using PBL3_GiaBao.EF;
 using System;
 using System.Collections.Generic;
@@ -14,59 +15,32 @@ namespace PBL3_GiaBao.View
 {
     public partial class fPhongChieu : Form
     {
-        BindingSource listPhim = new BindingSource();
         public fPhongChieu()
         {
             InitializeComponent();
-            LoadCinema();
-
+            loadListPhim(); // Load dữ liệu ra datagridview
+            loadData(); // Lấy dữ liệu từ row đầu tiền datagirdview đổ vào các textfield
         }
 
-        //Load dữ liệu
-        #region Load 
-        private void LoadCinema()
+        #region LoadData
+        void loadListPhim()
         {
-            dtgvCinema.DataSource = listPhim;
-            loadListPhim();
-            AddCinemaBinding();
-        } // Load dữ liệu lên datagridview
-        void loadListPhim() // Load dữ liệu vào BindingSource listPhim gồm các cột MaPhong, TenPhong, TenMH, SoChoNgoi, TinhTrang, SoHangGhe, SoGheMotHang
-        {
-            var data = from PhongChieu in BLL_PhongChieu.Instance.getAllPhongChieuByBLL()
-                       join LoaiManHinh in BLL_LoaiManHinh.Instance.getAllLoaiManHinhByBLL()
-                       on PhongChieu.idManHinh equals LoaiManHinh.id
-                       select new
-                       {
-                           MaPhong = PhongChieu.id,
-                           TenPhong = PhongChieu.TenPhong,
-                           TenMH = LoaiManHinh.TenMH,
-                           SoChoNgoi = PhongChieu.SoChoNgoi,
-                           TinhTrang = PhongChieu.TinhTrang,
-                           SoHangGhe = PhongChieu.SoHangGhe,
-                           SoGheMotHang = PhongChieu.SoGheMotHang,
-                       };
-            listPhim.DataSource = data.ToList();
+            List<PhongChieuView> phongChieuViews = BLLPhongChieuView.Instance.getAllPhongChieuViewByBLL();
+            dtgvCinema.DataSource = phongChieuViews.ToList();
         }
-        void LoadScreenTypeIntoComboBox(ComboBox cbo)
+        void loadData()
         {
-            cbo.DataSource = BLL_LoaiManHinh.Instance.getAllLoaiManHinhByBLL();
-            cbo.DisplayMember = "TenMH";
-            cbo.ValueMember = "id";
-        } // Load dữ liệu vào combobox màn hình
-        void AddCinemaBinding()
-        {
-            txtCinemaID.DataBindings.Add("Text", dtgvCinema.DataSource, "MaPhong", true, DataSourceUpdateMode.Never);
-            txtCinemaName.DataBindings.Add("Text", dtgvCinema.DataSource, "TenPhong", true, DataSourceUpdateMode.Never);
-            txtCinemaSeats.DataBindings.Add("Text", dtgvCinema.DataSource, "SoChoNgoi", true, DataSourceUpdateMode.Never);
-            txtCinemaStatus.DataBindings.Add("Text", dtgvCinema.DataSource, "TinhTrang", true, DataSourceUpdateMode.Never);
-            txtNumberOfRows.DataBindings.Add("Text", dtgvCinema.DataSource, "SoHangGhe", true, DataSourceUpdateMode.Never);
-            txtSeatsPerRow.DataBindings.Add("Text", dtgvCinema.DataSource, "SoGheMotHang", true, DataSourceUpdateMode.Never);
-            LoadScreenTypeIntoComboBox(cboCinemaScreenType);
-        } // Lấy dữ liệu từ BindingSource listPhim, thêm vào các textfield MaPhong, TenPhong, SoChoNgoi, TinhTrang, SoHangGhe, SoGheMotHang
+            txtCinemaID.Text = dtgvCinema.Rows[0].Cells["MaPhong"].Value.ToString().Trim();
+            txtCinemaName.Text = dtgvCinema.Rows[0].Cells["TenPhong"].Value.ToString().Trim();
+            txtDisplay.Text = dtgvCinema.Rows[0].Cells["TenMH"].Value.ToString().Trim();
+            txtCinemaSeats.Text = dtgvCinema.Rows[0].Cells["SoChoNgoi"].Value.ToString().Trim();
+            txtCinemaStatus.Text = dtgvCinema.Rows[0].Cells["TinhTrang"].Value.ToString().Trim();
+            txtNumberOfRows.Text = dtgvCinema.Rows[0].Cells["SoHangGhe"].Value.ToString().Trim();
+            txtSeatsPerRow.Text = dtgvCinema.Rows[0].Cells["SoGheMotHang"].Value.ToString().Trim();
+        }
         #endregion
 
-        // Thêm, sửa , xóa, thoát
-        #region Add, Update, Delete, Exit 
+        #region Button
         private void btnAdd_Click(object sender, EventArgs e)
         {
             fFunctionPhongChieu f = new fFunctionPhongChieu(null);
@@ -93,17 +67,18 @@ namespace PBL3_GiaBao.View
             if (rows.Count < 1)
             {
                 MessageBox.Show("Vui lòng chọn tối thiểu 1 phòng chiếu để xóa", "Thông báo");
-            }   
+            }
             else
             {
-                try {
+                try
+                {
                     List<string> maPhongs = new List<string>();
                     for (int i = 0; i < rows.Count; i++)
                     {
                         bool check = true;
                         string s = rows[i].Cells["MaPhong"].Value.ToString().Trim();
                         List<DinhDangPhim> dinhDangPhims = BLL_DinhDangPhim.Instance.GetDinhDangPhimByMaPhong(s);
-                        foreach(DinhDangPhim ddp in dinhDangPhims)
+                        foreach (DinhDangPhim ddp in dinhDangPhims)
                         {
                             if (BLL_LichChieu.Instance.isExistidDinhDang(ddp.id))
                             {
@@ -117,10 +92,10 @@ namespace PBL3_GiaBao.View
                     if (BLL_PhongChieu.Instance.DeleteListPhongChieu(maPhongs))
                     {
                         MessageBox.Show("Xóa thành công ");
-                        loadListPhim();   
+                        loadListPhim();
                     }
                 }
-                catch(Exception)
+                catch (Exception)
                 {
                     MessageBox.Show("Xóa thất bại", "Thông báo");
                 }
@@ -132,28 +107,20 @@ namespace PBL3_GiaBao.View
         }
         #endregion
 
-        // Event
         #region Event
-        private void txtCinemaID_TextChanged(object sender, EventArgs e) // Mỗi khi Mã Phòng thay đổi, load dữ liệu vào các textfied tương ứng với Mã phòng đó
+        private void dtgvCinema_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            string screenName = (string)dtgvCinema.SelectedCells[0].OwningRow.Cells["TenMH"].Value;
-            LoaiManHinh lmh = BLL_LoaiManHinh.Instance.GetLoaiManHinhByTenMH(screenName);
-            //This is the ScreenType that we're currently selecting in dtgv
-
-            cboCinemaScreenType.SelectedItem = lmh;
-
-            int index = -1;
-            int i = 0;
-            foreach (LoaiManHinh item in cboCinemaScreenType.Items)
+            if (e.RowIndex != -1)
             {
-                if (item.TenMH.Equals(lmh.TenMH))
-                {
-                    index = i;
-                    break;
-                }
-                i++;
+                txtCinemaID.Text = dtgvCinema.Rows[e.RowIndex].Cells["MaPhong"].Value.ToString().Trim();
+                txtCinemaName.Text = dtgvCinema.Rows[e.RowIndex].Cells["TenPhong"].Value.ToString().Trim();
+                txtDisplay.Text = dtgvCinema.Rows[e.RowIndex].Cells["TenMH"].Value.ToString().Trim();
+                txtCinemaSeats.Text = dtgvCinema.Rows[e.RowIndex].Cells["SoChoNgoi"].Value.ToString().Trim();
+                txtCinemaStatus.Text = dtgvCinema.Rows[e.RowIndex].Cells["TinhTrang"].Value.ToString().Trim();
+                txtNumberOfRows.Text = dtgvCinema.Rows[e.RowIndex].Cells["SoHangGhe"].Value.ToString().Trim();
+                txtSeatsPerRow.Text = dtgvCinema.Rows[e.RowIndex].Cells["SoGheMotHang"].Value.ToString().Trim();
+
             }
-            cboCinemaScreenType.SelectedIndex = index;
         }
         #endregion
     }
