@@ -1,0 +1,7 @@
+-Tài khoản đăng nhập:
+	+ phân quyền bán vé : usename:banve password:1234
+	+ phân quyền quản lý: usename: giabao password:2807
+
+- Để có thể bán vé:  đăng nhập tư cách quản lý -> quản lý vé -> chọn lịch chiếu -> tạo vé theo lịch chiếu. (Vì Database hiện chưa tạo vé cho phim nào nên mở Form bán vé chọn phim sẽ k hiện ghế để chọn)
+
+

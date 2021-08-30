@@ -1,5 +1,0 @@
-1. Tạo thư mục chứa image phim
-2. btn đóng form phim,ql tài khoản lỗi -> click không hiện lại form trước nó
-3. btn đóng form thể loại-> lỗi nốt 
-4.btn đóng form phòng chiếu, lịch chiếu đíu run
-4. click row datagridview quanli phim lỗi soure image
