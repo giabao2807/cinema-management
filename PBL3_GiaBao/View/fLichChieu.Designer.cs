@@ -50,6 +50,8 @@ namespace PBL3_GiaBao.View
             this.txtSearchShowtime = new System.Windows.Forms.TextBox();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
+            this.txtTicketFee = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvShowTime)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -130,6 +132,8 @@ namespace PBL3_GiaBao.View
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.txtTicketFee);
             this.groupBox1.Controls.Add(this.txtCinemaRoom);
             this.groupBox1.Controls.Add(this.txtMovieName_Showtime);
             this.groupBox1.Controls.Add(this.label7);
@@ -153,6 +157,7 @@ namespace PBL3_GiaBao.View
             this.txtCinemaRoom.Location = new System.Drawing.Point(177, 189);
             this.txtCinemaRoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCinemaRoom.Name = "txtCinemaRoom";
+            this.txtCinemaRoom.ReadOnly = true;
             this.txtCinemaRoom.Size = new System.Drawing.Size(256, 34);
             this.txtCinemaRoom.TabIndex = 66;
             // 
@@ -219,6 +224,7 @@ namespace PBL3_GiaBao.View
             this.txtShowtimeID.Location = new System.Drawing.Point(177, 52);
             this.txtShowtimeID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtShowtimeID.Name = "txtShowtimeID";
+            this.txtShowtimeID.ReadOnly = true;
             this.txtShowtimeID.Size = new System.Drawing.Size(256, 34);
             this.txtShowtimeID.TabIndex = 52;
             // 
@@ -297,6 +303,25 @@ namespace PBL3_GiaBao.View
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // txtTicketFee
+            // 
+            this.txtTicketFee.Location = new System.Drawing.Point(177, 241);
+            this.txtTicketFee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTicketFee.Name = "txtTicketFee";
+            this.txtTicketFee.ReadOnly = true;
+            this.txtTicketFee.Size = new System.Drawing.Size(256, 34);
+            this.txtTicketFee.TabIndex = 67;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(6, 245);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(72, 24);
+            this.label10.TabIndex = 68;
+            this.label10.Text = "Giá Vé";
+            // 
             // fLichChieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -349,5 +374,7 @@ namespace PBL3_GiaBao.View
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.TextBox txtCinemaRoom;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtTicketFee;
     }
 }

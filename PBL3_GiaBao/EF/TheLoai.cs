@@ -17,7 +17,7 @@ namespace PBL3_GiaBao.EF
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TheLoai()
         {
-            this.Phims = new HashSet<Phim>();
+            this.Phim = new HashSet<Phim>();
         }
     
         public string id { get; set; }
@@ -25,6 +25,6 @@ namespace PBL3_GiaBao.EF
         public string MoTa { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Phim> Phims { get; set; }
+        public virtual ICollection<Phim> Phim { get; set; }
     }
 }

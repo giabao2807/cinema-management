@@ -19,7 +19,6 @@ namespace PBL3_GiaBao.View
         public fLichChieu()
         {
             InitializeComponent();
-            checkLichChieuExpired(); // Xóa lịch chiếu hết hạn
             LoadShowtime(); // Load dữ liệu lên datagridview
             loadData(); // Load dữ liệu từ row đầu tiên datagridview lên các textfield tương ứng
         }
@@ -27,12 +26,12 @@ namespace PBL3_GiaBao.View
         #region LoadData
         void LoadShowtime()
         {
-            List<LichChieuView1> lichChieuViews = BLL_LichChieuView1.Instance.getAllLichChieuViewByBLL();
+            List<LichChieuView1> lichChieuViews = BLL_LichChieuView1.Instance.getAllLichChieuViewNoExpriedByBLL();
             dtgvShowTime.DataSource = lichChieuViews.ToList();
         }
         void loadData()
         {
-            if (dtgvShowTime.Rows.Count != 0)
+            if (dtgvShowTime.Rows.Count > 0)
             {
                 string maPhong = null;
                 txtShowtimeID.Text = dtgvShowTime.Rows[0].Cells["MaLichChieu"].Value.ToString().Trim();
@@ -40,6 +39,7 @@ namespace PBL3_GiaBao.View
                 txtScreenTypeName_Showtime.Text = dtgvShowTime.Rows[0].Cells["ManHinh"].Value.ToString().Trim();
                 maPhong = dtgvShowTime.Rows[0].Cells["MaPhong"].Value.ToString().Trim();
                 txtCinemaRoom.Text = BLL_PhongChieu.Instance.GetPhongChieuByMaPhong(maPhong).TenPhong;
+                txtTicketFee.Text = dtgvShowTime.Rows[0].Cells["GiaVe"].Value.ToString().Trim();
                 dtmShowtimeDate.Text = dtgvShowTime.Rows[0].Cells["ThoiGianChieu"].Value.ToString().Trim();
                 dtmShowtimeTime.Text = dtgvShowTime.Rows[0].Cells["ThoiGianChieu"].Value.ToString().Trim();
             }
@@ -49,8 +49,8 @@ namespace PBL3_GiaBao.View
         #region Button
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            fFunctionLichChieu f = new fFunctionLichChieu(null);
-            f.d += new fFunctionLichChieu.Show_del(LoadShowtime);
+            fThemLichChieu f = new fThemLichChieu(null);
+            f.d += new fThemLichChieu.Show_del(LoadShowtime);
             f.ShowDialog();
         }
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -58,8 +58,8 @@ namespace PBL3_GiaBao.View
             if (dtgvShowTime.SelectedRows.Count == 1)
             {
                 string maLichChieu = txtShowtimeID.Text;
-                fFunctionLichChieu f = new fFunctionLichChieu(maLichChieu);
-                f.d += new fFunctionLichChieu.Show_del(LoadShowtime);
+                fThemLichChieu f = new fThemLichChieu(maLichChieu);
+                f.d += new fThemLichChieu.Show_del(LoadShowtime);
                 f.ShowDialog();
             }
             else
@@ -84,7 +84,7 @@ namespace PBL3_GiaBao.View
                         string s = rows[i].Cells["MaLichChieu"].Value.ToString().Trim();
                         if (BLL_Ve.Instance.IsExitLichChieu(s))
                         {
-                            MessageBox.Show("Lịch chiếu " + s + " đã có vé được bán, không thể xóa");
+                            MessageBox.Show("Lịch chiếu này đã có vé được bán, không thể xóa");
                         }
                         else
                         {
@@ -140,10 +140,7 @@ namespace PBL3_GiaBao.View
             return regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
         } // Hàm chuyển đổi chuỗi có dấu sang không dấu
 
-        public void checkLichChieuExpired()
-        {
-            BLL_LichChieu.Instance.CheckLichChieuExpired();
-        }
+
         #endregion
 
         #region Event
@@ -169,6 +166,7 @@ namespace PBL3_GiaBao.View
                 txtScreenTypeName_Showtime.Text = dtgvShowTime.Rows[e.RowIndex].Cells["ManHinh"].Value.ToString().Trim();
                 maPhong = dtgvShowTime.Rows[e.RowIndex].Cells["MaPhong"].Value.ToString().Trim();
                 txtCinemaRoom.Text = BLL_PhongChieu.Instance.GetPhongChieuByMaPhong(maPhong).TenPhong;
+                txtTicketFee.Text = dtgvShowTime.Rows[e.RowIndex].Cells["GiaVe"].Value.ToString().Trim();
                 dtmShowtimeDate.Text = dtgvShowTime.Rows[e.RowIndex].Cells["ThoiGianChieu"].Value.ToString().Trim();
                 dtmShowtimeTime.Text = dtgvShowTime.Rows[e.RowIndex].Cells["ThoiGianChieu"].Value.ToString().Trim();
             }

@@ -176,7 +176,7 @@ namespace PBL3_GiaBao.View
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fQuanLyVe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "QLVe";
+            this.Text = "fQuanLyVe";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvVe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrLichChieu)).EndInit();
             this.ResumeLayout(false);

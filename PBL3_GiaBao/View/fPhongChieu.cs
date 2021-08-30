@@ -30,21 +30,24 @@ namespace PBL3_GiaBao.View
         }
         void loadData()
         {
-            txtCinemaID.Text = dtgvCinema.Rows[0].Cells["MaPhong"].Value.ToString().Trim();
-            txtCinemaName.Text = dtgvCinema.Rows[0].Cells["TenPhong"].Value.ToString().Trim();
-            txtDisplay.Text = dtgvCinema.Rows[0].Cells["TenMH"].Value.ToString().Trim();
-            txtCinemaSeats.Text = dtgvCinema.Rows[0].Cells["SoChoNgoi"].Value.ToString().Trim();
-            txtCinemaStatus.Text = dtgvCinema.Rows[0].Cells["TinhTrang"].Value.ToString().Trim();
-            txtNumberOfRows.Text = dtgvCinema.Rows[0].Cells["SoHangGhe"].Value.ToString().Trim();
-            txtSeatsPerRow.Text = dtgvCinema.Rows[0].Cells["SoGheMotHang"].Value.ToString().Trim();
+            if (dtgvCinema.Rows.Count > 0)
+            {
+                txtCinemaID.Text = dtgvCinema.Rows[0].Cells["MaPhong"].Value.ToString().Trim();
+                txtCinemaName.Text = dtgvCinema.Rows[0].Cells["TenPhong"].Value.ToString().Trim();
+                txtDisplay.Text = dtgvCinema.Rows[0].Cells["TenMH"].Value.ToString().Trim();
+                txtCinemaSeats.Text = dtgvCinema.Rows[0].Cells["SoChoNgoi"].Value.ToString().Trim();
+                txtCinemaStatus.Text = dtgvCinema.Rows[0].Cells["TinhTrang"].Value.ToString().Trim();
+                txtNumberOfRows.Text = dtgvCinema.Rows[0].Cells["SoHangGhe"].Value.ToString().Trim();
+                txtSeatsPerRow.Text = dtgvCinema.Rows[0].Cells["SoGheMotHang"].Value.ToString().Trim();
+            }
         }
         #endregion
 
         #region Button
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            fFunctionPhongChieu f = new fFunctionPhongChieu(null);
-            f.d += new fFunctionPhongChieu.My_del(loadListPhim);
+            fThemPhongChieu f = new fThemPhongChieu(null);
+            f.d += new fThemPhongChieu.My_del(loadListPhim);
             f.ShowDialog();
         }
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -52,8 +55,8 @@ namespace PBL3_GiaBao.View
             if (dtgvCinema.SelectedRows.Count == 1)
             {
                 string maPhong = txtCinemaID.Text;
-                fFunctionPhongChieu f = new fFunctionPhongChieu(maPhong);
-                f.d += new fFunctionPhongChieu.My_del(loadListPhim);
+                fThemPhongChieu f = new fThemPhongChieu(maPhong);
+                f.d += new fThemPhongChieu.My_del(loadListPhim);
                 f.ShowDialog();
             }
             else
@@ -82,7 +85,7 @@ namespace PBL3_GiaBao.View
                         {
                             if (BLL_LichChieu.Instance.isExistidDinhDang(ddp.id))
                             {
-                                MessageBox.Show("Phòng chiếu có mã phòng " + s + " đang được sử dụng, không thể xóa");
+                                MessageBox.Show("Phòng chiếu này đang được sử dụng, không thể xóa");
                                 check = false;
                                 break;
                             }
@@ -119,7 +122,6 @@ namespace PBL3_GiaBao.View
                 txtCinemaStatus.Text = dtgvCinema.Rows[e.RowIndex].Cells["TinhTrang"].Value.ToString().Trim();
                 txtNumberOfRows.Text = dtgvCinema.Rows[e.RowIndex].Cells["SoHangGhe"].Value.ToString().Trim();
                 txtSeatsPerRow.Text = dtgvCinema.Rows[e.RowIndex].Cells["SoGheMotHang"].Value.ToString().Trim();
-
             }
         }
         #endregion

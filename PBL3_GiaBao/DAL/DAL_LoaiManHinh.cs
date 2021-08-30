@@ -9,7 +9,7 @@ namespace PBL3_GiaBao.DAL
 {
     class DAL_LoaiManHinh
     {
-        private static QLRP7Entities db = new QLRP7Entities();
+        private static QLRP8Entities db = new QLRP8Entities();
 
         // Design Pattern
         #region Design Pattern
@@ -41,25 +41,25 @@ namespace PBL3_GiaBao.DAL
         #region Function
         public List<LoaiManHinh> getAllLoaiManHinh()
         {
-            return db.LoaiManHinhs.Select(lmh => lmh).ToList();
+            return db.LoaiManHinh.Select(lmh => lmh).ToList();
         }
         public LoaiManHinh getLoaiManHinhByTenMH(string tenMH)
         {
             LoaiManHinh loaiManHinh = null;
-            var data = db.LoaiManHinhs.Where(lmh => lmh.TenMH.Equals(tenMH));
+            var data = db.LoaiManHinh.Where(lmh => lmh.TenMH.Equals(tenMH));
             if (data.Count() > 0) loaiManHinh = data.FirstOrDefault();
             return loaiManHinh;
         }
         public LoaiManHinh getLoaiManHinhByIdMH(string idMH)
         {
-            LoaiManHinh data = db.LoaiManHinhs.Find(idMH); //Find yêu cầu thuộc tính khóa chính, return về null nếu không có record tương ứng với id đưa vào
+            LoaiManHinh data = db.LoaiManHinh.Find(idMH); //Find yêu cầu thuộc tính khóa chính, return về null nếu không có record tương ứng với id đưa vào
             return data;
         }
         public string getIdLMH(string s)
         {
             //LoaiManHinh data = db.LoaiManHinh.Where(p => p.TenMH.CompareTo(s) == 0).FirstOrDefault();
             //return data.id;
-            foreach (LoaiManHinh lmh in db.LoaiManHinhs)
+            foreach (LoaiManHinh lmh in db.LoaiManHinh)
             {
                 if (lmh.TenMH.CompareTo(s.Trim()) == 0)
                 {

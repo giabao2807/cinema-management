@@ -17,6 +17,7 @@ namespace PBL3_GiaBao.View
         {
             InitializeComponent();
             setData();
+            LoadData();
         }
 
         private void setData()
@@ -24,22 +25,35 @@ namespace PBL3_GiaBao.View
             dtgvDinhDangPhim.DataSource = BLL_DinhDangPhim.Instance.GetAllDinhDangPhim();
             dtgvDinhDangPhim.Columns["Phim"].Visible = false;
             dtgvDinhDangPhim.Columns["PhongChieu"].Visible = false;
-            dtgvDinhDangPhim.Columns["LichChieux"].Visible = false;
+            dtgvDinhDangPhim.Columns["LichChieu"].Visible = false;
+        }
+        private void LoadData()
+        {
+            if (dtgvDinhDangPhim.Rows.Count > 0) {
+                txtMaDinhDang.Text = dtgvDinhDangPhim.Rows[0].Cells["id"].Value.ToString().Trim();
+                string maPhong = dtgvDinhDangPhim.Rows[0].Cells["idPhongchieu"].Value.ToString().Trim();
+                string maPhim = dtgvDinhDangPhim.Rows[0].Cells["idPhim"].Value.ToString().Trim();
+                txtPhongChieu.Text = BLL_PhongChieu.Instance.GetPhongChieuByMaPhong(maPhong).TenPhong;
+                txtPhim.Text = BLL_Phim.Instance.getPhimByIdPhim(maPhim).TenPhim;
+            }
         }
 
         private void dtgvDinhDangPhim_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtMaDinhDang.Text = dtgvDinhDangPhim.Rows[e.RowIndex].Cells["id"].Value.ToString().Trim();
-            string maPhong = dtgvDinhDangPhim.Rows[e.RowIndex].Cells["idPhongchieu"].Value.ToString().Trim();
-            string maPhim = dtgvDinhDangPhim.Rows[e.RowIndex].Cells["idPhim"].Value.ToString().Trim();
-            txtPhongChieu.Text = BLL_PhongChieu.Instance.GetPhongChieuByMaPhong(maPhong).TenPhong;
-            txtPhim.Text = BLL_Phim.Instance.getPhimByIdPhim(maPhim).TenPhim;
+            if (e.RowIndex != -1)
+            {
+                txtMaDinhDang.Text = dtgvDinhDangPhim.Rows[e.RowIndex].Cells["id"].Value.ToString().Trim();
+                string maPhong = dtgvDinhDangPhim.Rows[e.RowIndex].Cells["idPhongchieu"].Value.ToString().Trim();
+                string maPhim = dtgvDinhDangPhim.Rows[e.RowIndex].Cells["idPhim"].Value.ToString().Trim();
+                txtPhongChieu.Text = BLL_PhongChieu.Instance.GetPhongChieuByMaPhong(maPhong).TenPhong;
+                txtPhim.Text = BLL_Phim.Instance.getPhimByIdPhim(maPhim).TenPhim;
+            }
         }
 
         private void btThem_Click(object sender, EventArgs e)
         {
-            fFunctionDinhDangPhim f = new fFunctionDinhDangPhim(null);
-            f.d += new fFunctionDinhDangPhim.My_del(setData);
+            fThemDinhDangPhim f = new fThemDinhDangPhim(null);
+            f.d += new fThemDinhDangPhim.My_del(setData);
             f.ShowDialog();
         }
 
@@ -60,7 +74,7 @@ namespace PBL3_GiaBao.View
                         string s = rows[i].Cells["id"].Value.ToString().Trim();
                         if (BLL_LichChieu.Instance.isExistidDinhDang(s))
                         {
-                            MessageBox.Show("Định dạng phim có mã " + s + " đang có lịch chiếu, không thể xóa");
+                            MessageBox.Show("Đang có lịch chiếu tham chiếu tới định dạng phim này, không thể xóa");
                         }
                         else
                         {
@@ -85,8 +99,8 @@ namespace PBL3_GiaBao.View
             if (dtgvDinhDangPhim.SelectedRows.Count == 1)
             {
                 string maDinhDang = txtMaDinhDang.Text;
-                fFunctionDinhDangPhim f = new fFunctionDinhDangPhim(maDinhDang);
-                f.d += new fFunctionDinhDangPhim.My_del(setData);
+                fThemDinhDangPhim f = new fThemDinhDangPhim(maDinhDang);
+                f.d += new fThemDinhDangPhim.My_del(setData);
                 f.ShowDialog();
             }
             else

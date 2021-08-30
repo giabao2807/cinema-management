@@ -49,7 +49,7 @@ namespace PBL3_GiaBao.BLL
 
         // Mua vé, Đếm vé
         #region BuyTicket, CountTicket
-        public int BuyTicket(int ticketID, float TienBanVe)
+        public bool BuyTicket(int ticketID, float TienBanVe)
         {
             return DAL_Ve.Instance.BuyTicket_DAL(ticketID,TienBanVe);
         }
@@ -57,7 +57,7 @@ namespace PBL3_GiaBao.BLL
         {
             return DAL_Ve.Instance.CountTheNumberOfTicketsSoldByShowTime_DAL(showTimesID);
         }
-        public int CountToltalTicketByShowTime(string showTimesID)
+        public string CountToltalTicketByShowTime(string showTimesID)
         {
             return DAL_Ve.Instance.CountToltalTicketByShowTime_DAL(showTimesID);
         }
@@ -65,11 +65,11 @@ namespace PBL3_GiaBao.BLL
 
         // Thêm , xóa
         #region Add, Delete
-        public int InsertTicketByShowTimes(string showTimesID, string seatName)
+        public bool InsertTicketByShowTimes(string showTimesID, string seatName)
         {
             return DAL_Ve.Instance.InsertTicketByShowTimes_DAL(showTimesID, seatName); 
         }
-        public int DeleteTicketsByShowTimes(string showTimesID)
+        public bool DeleteTicketsByShowTimes(string showTimesID)
         {
             return DAL_Ve.Instance.DeleteTicketsByShowTimes_DAL(showTimesID);
         }

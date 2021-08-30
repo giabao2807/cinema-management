@@ -13,10 +13,10 @@ namespace PBL3_GiaBao.EF
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QLRP7Entities : DbContext
+    public partial class QLRP8Entities : DbContext
     {
-        public QLRP7Entities()
-            : base("name=QLRP7Entities")
+        public QLRP8Entities()
+            : base("name=QLRP8Entities")
         {
         }
     
@@ -25,14 +25,15 @@ namespace PBL3_GiaBao.EF
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<DinhDangPhim> DinhDangPhims { get; set; }
+        public virtual DbSet<DinhDangPhim> DinhDangPhim { get; set; }
         public virtual DbSet<LichChieu> LichChieu { get; set; }
-        public virtual DbSet<LoaiManHinh> LoaiManHinhs { get; set; }
-        public virtual DbSet<NhanVien> NhanViens { get; set; }
-        public virtual DbSet<Phim> Phims { get; set; }
+        public virtual DbSet<LoaiManHinh> LoaiManHinh { get; set; }
+        public virtual DbSet<NhanVien> NhanVien { get; set; }
+        public virtual DbSet<Phim> Phim { get; set; }
         public virtual DbSet<PhongChieu> PhongChieu { get; set; }
-        public virtual DbSet<TaiKhoan> TaiKhoans { get; set; }
-        public virtual DbSet<TheLoai> TheLoais { get; set; }
-        public virtual DbSet<Ve> Ves { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<TaiKhoan> TaiKhoan { get; set; }
+        public virtual DbSet<TheLoai> TheLoai { get; set; }
+        public virtual DbSet<Ve> Ve { get; set; }
     }
 }

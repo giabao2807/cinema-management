@@ -9,7 +9,7 @@ namespace PBL3_GiaBao.DAL
 {
     class DAL_Ve
     {
-        private static QLRP7Entities db = new QLRP7Entities();
+        private static QLRP8Entities db = new QLRP8Entities();
 
         // Design Pattern
         #region Design Pattern
@@ -40,66 +40,59 @@ namespace PBL3_GiaBao.DAL
         #region Get Data
         public List<Ve> GetListTicketsBoughtByShowTimes_DAL(string showTimesID)
         {
-            var l = db.Ves.Where(p => p.idLichChieu == showTimesID && p.TrangThai == 1);
+            var l = db.Ve.Where(p => p.idLichChieu == showTimesID && p.TrangThai == 1);
             return l.ToList();
         }
         public List<Ve> GetListTicketsByShowTimes_DAL(string showTimesID)
         {
-            var l = db.Ves.Where(p => p.idLichChieu == showTimesID);
+            var l = db.Ve.Where(p => p.idLichChieu == showTimesID);
             return l.ToList();
         }
         #endregion
 
         // Mua vé, Đếm vé
         #region BuyTicket, CountTicket
-        public int BuyTicket_DAL(int ticketID, float TienBanVe)
+        public bool BuyTicket_DAL(int ticketID, float TienBanVe)
         {
-            db.Ves.Find(ticketID).TrangThai = 1;
-            // more
-            db.Ves.Find(ticketID).TienBanVe = TienBanVe;
-            db.SaveChanges();
-            return 1;
+            db.Ve.Find(ticketID).TrangThai = 1;
+            db.Ve.Find(ticketID).TienBanVe = TienBanVe;
+            return db.SaveChanges() > 0;
         }
         public int CountTheNumberOfTicketsSoldByShowTime_DAL(string showTimesID)
         {
             int count = 0;
-            var l = db.Ves.Where(p => p.idLichChieu == showTimesID && p.TrangThai == 0);
+            var l = db.Ve.Where(p => p.idLichChieu == showTimesID && p.TrangThai == 1);
             count = l.ToList().Count;
             return count;
         }
-        public int CountToltalTicketByShowTime_DAL(string showTimesID)
+        public string CountToltalTicketByShowTime_DAL(string showTimesID)
         {
-            var l = db.Ves.Where(p => p.idLichChieu == showTimesID);
-            return l.ToList().Count;
+            var l = db.Ve.Where(p => p.idLichChieu == showTimesID);
+            return l.ToList().Count.ToString();
         }
         #endregion
 
         // Thêm , xóa
         #region Add, Delete
-        public int InsertTicketByShowTimes_DAL(string showTimesID, string seatName)
+        public bool InsertTicketByShowTimes_DAL(string showTimesID, string seatName)
         {
             Ve obj = new Ve();
             obj.idLichChieu = showTimesID;
             obj.MaGheNgoi = seatName;
-            db.Ves.Add(obj);
-            db.SaveChanges();
-            return 1;
+            db.Ve.Add(obj);
+            return db.SaveChanges() > 0;
+            
         }
-        public int DeleteTicketsByShowTimes_DAL(string showTimesID)
+        public bool DeleteTicketsByShowTimes_DAL(string showTimesID)
         {
-            var l = db.Ves.Where(p => p.idLichChieu == showTimesID);
-            db.Ves.RemoveRange(l);
-            db.SaveChanges();
-            LichChieu lichChieu = DAL_LichChieu.Instance.GetLichChieuByIdLichChieu(showTimesID);
-            DinhDangPhim dinhDangPhim = DAL_DinhDangPhim.Instance.GetDinhDangPhimByMaDinhDang(lichChieu.idDinhDang);
-            PhongChieu phongChieu = DAL_PhongChieu.Instance.GetPhongChieuByMaPhong(dinhDangPhim.idPhongChieu);
-            int result = phongChieu.SoChoNgoi;
-            return result;
+            var l = db.Ve.Where(p => p.idLichChieu == showTimesID);
+            db.Ve.RemoveRange(l);
+            return  db.SaveChanges() >0;
         }
 
         public bool IsExitLichChieu(string maLichChieu)
         {
-            var data = db.Ves.Where(ve => ve.idLichChieu == maLichChieu && ve.TrangThai == 1);
+            var data = db.Ve.Where(ve => ve.idLichChieu == maLichChieu && ve.TrangThai == 1);
             return data.Count() > 1;
         }
         #endregion

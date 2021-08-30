@@ -9,7 +9,7 @@ namespace PBL3_GiaBao.DAL
 {
     class DAL_TheLoai
     {
-        private static QLRP7Entities db = new QLRP7Entities();
+        private static QLRP8Entities db = new QLRP8Entities();
 
         // Design Pattern
         #region Design Pattern
@@ -40,28 +40,28 @@ namespace PBL3_GiaBao.DAL
         #region Function
         public List<TheLoai> getAllTheLoai()
         {
-            return db.TheLoais.Select(theloai => theloai).ToList();
+            return db.TheLoai.Select(theloai => theloai).ToList();
         }
         #endregion
         //check
         #region check
         public bool themTheLoai(TheLoai tl)
         {
-            db.TheLoais.Add(tl);
+            db.TheLoai.Add(tl);
             return db.SaveChanges() > 0;
         }
         #endregion
         public bool xoaTheLoai(List<string> maLoaiPhims)
         {
             foreach (string x in maLoaiPhims)
-            {         
-                if(DAL.DAL_Phim.Instance.getPhimbyidTheLoai(x).Count > 0)
+            {
+                if (DAL.DAL_Phim.Instance.getPhimbyidTheLoai(x).Count > 0)
                 {
                     List<string> maphims = DAL.DAL_Phim.Instance.getPhimbyidTheLoai(x).Select(p => p.id).ToList();
                     DAL.DAL_Phim.Instance.xoaphim(maphims);
                 }
-                var l = db.TheLoais.Where(tl => tl.id.Equals(x)).FirstOrDefault();
-                db.TheLoais.Remove(l);
+                var l = db.TheLoai.Where(tl => tl.id.Equals(x)).FirstOrDefault();
+                db.TheLoai.Remove(l);
             }
             return db.SaveChanges() > 0;
         }

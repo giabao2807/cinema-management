@@ -17,13 +17,13 @@ namespace PBL3_GiaBao.EF
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public LoaiManHinh()
         {
-            this.PhongChieux = new HashSet<PhongChieu>();
+            this.PhongChieu = new HashSet<PhongChieu>();
         }
     
         public string id { get; set; }
         public string TenMH { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PhongChieu> PhongChieux { get; set; }
+        public virtual ICollection<PhongChieu> PhongChieu { get; set; }
     }
 }

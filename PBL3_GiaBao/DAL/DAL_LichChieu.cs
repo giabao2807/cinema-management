@@ -7,12 +7,13 @@ using System.Text;
 using System.Threading.Tasks;
 using PBL3_GiaBao.DTO;
 using PBL3_GiaBao.BLL;
+using System.Data.Entity.SqlServer;
 
 namespace PBL3_GiaBao.DAL
 {
     class DAL_LichChieu
     {
-        private static QLRP7Entities db = new QLRP7Entities();
+        private static QLRP8Entities db = new QLRP8Entities();
 
         // Design Pattern
         #region Design Pattern
@@ -50,11 +51,10 @@ namespace PBL3_GiaBao.DAL
         {
             return db.LichChieu.Find(idLichChieu);
         }
-        public int UpdateStatusShowTimes_DAL(string showTimesID, int status)
+        public bool UpdateStatusShowTimes_DAL(string showTimesID, int status)
         {
-                db.LichChieu.Find(showTimesID).TrangThai = status;
-                db.SaveChanges();
-                return 1;
+                db.LichChieu.Find(showTimesID).TrangThai = status;  
+                return db.SaveChanges() > 0;
         }
 
         public List<LichChieu> GetListShowTimesNotCreateTickets_DAL()
@@ -77,7 +77,8 @@ namespace PBL3_GiaBao.DAL
         public List<LichChieuView> LoadListShowTimeByFilm(string formatMovieID, DateTime date)
         {
             var data = db.LichChieu.Where(p => p.idDinhDang == formatMovieID && p.ThoiGianChieu.Day.CompareTo(date.Day) == 0
-                && p.ThoiGianChieu.Month.CompareTo(date.Month) == 0 && p.ThoiGianChieu.Year.CompareTo(date.Year) == 0).Select(
+                && p.ThoiGianChieu.Month.CompareTo(date.Month) == 0 && p.ThoiGianChieu.Year.CompareTo(date.Year) == 0
+                && p.ThoiGianChieu > DateTime.Now).Select(
                  p => new LichChieuView
                  {
                      TenPhong = p.DinhDangPhim.PhongChieu.TenPhong,
@@ -85,27 +86,29 @@ namespace PBL3_GiaBao.DAL
                      TenPhim = p.DinhDangPhim.Phim.TenPhim,
                      ThoiGianChieu = p.ThoiGianChieu,
                      TrangThai = p.TrangThai
-                 });
+                 }) ; 
             return data.ToList();
         }
         #endregion
 
         // Thêm, sửa, xóa
         #region Add, Update, Delete
-        public bool addLichChieu(string maLichChieu, string maDinhDang, DateTime time)
+        public bool addLichChieu(string maLichChieu, string maDinhDang, int giaVe, DateTime time)
         {
             db.LichChieu.Add(new LichChieu
             {
                 id = maLichChieu,
                 idDinhDang = maDinhDang,
+                GiaVe = giaVe,
                 ThoiGianChieu = time,
             });
             return db.SaveChanges() > 0;
         }
-        public bool updateLichChieu(string maLichChieu, string maDinhDang, DateTime time)
+        public bool updateLichChieu(string maLichChieu, string maDinhDang, int giaVe, DateTime time)
         {
             var s = db.LichChieu.Find(maLichChieu);
             s.idDinhDang = maDinhDang;
+            s.GiaVe = giaVe;
             s.ThoiGianChieu = time;
             return db.SaveChanges() > 0;
         }
@@ -126,7 +129,7 @@ namespace PBL3_GiaBao.DAL
             foreach (LichChieu lc in getAllLichChieu())
             {
                 if (lc.id == maLichChieu)
-                {
+                { 
                     db.LichChieu.Remove(lc);
                     break;
                 }
@@ -138,23 +141,15 @@ namespace PBL3_GiaBao.DAL
         {
             foreach(string maLichChieu in maLichChieus)
             {
-                var v = db.Ves.Where(ve => ve.idLichChieu == maLichChieu);
-                db.Ves.RemoveRange(v);
+                var v = db.Ve.Where(ve => ve.idLichChieu == maLichChieu);
+                db.Ve.RemoveRange(v);
                 var l = db.LichChieu.Find(maLichChieu);
                 db.LichChieu.Remove(l);
             }
             return db.SaveChanges() > 0;
         }
         #endregion
-        public void CheckLichChieuExpried()
-        {
-            DateTime now = DateTime.Now;
-            List<LichChieu> lichChieus = getAllLichChieu();
-            foreach (LichChieu lc in lichChieus)
-            {
-                if (lc.ThoiGianChieu < now) deleteLichChieuByMaLichChieu(lc.id);
-            }
-        }
+       
         public bool checkDataLichChieu(string maPhongChieu, string maPhim, DateTime time)
         {
             List<LichChieu> lichChieus = db.LichChieu.Where

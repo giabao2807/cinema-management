@@ -10,7 +10,7 @@ namespace PBL3_GiaBao.DAL
 {
     class DAL_PhimView
     {
-        private static QLRP7Entities db = new QLRP7Entities();
+        private static QLRP8Entities db = new QLRP8Entities();
 
         // Design Pattern
         #region Design Pattern
@@ -40,7 +40,7 @@ namespace PBL3_GiaBao.DAL
         {
             List<PhimView> phimViews = new List<PhimView>();
 
-            var data = db.Phims.Where(p => p.idTheLoai == p.TheLoai.id)
+            var data = db.Phim.Where(p => p.idTheLoai == p.TheLoai.id)
                                          .Select(p => new PhimView
                                          {
                                              id = p.id,

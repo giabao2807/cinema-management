@@ -9,7 +9,7 @@ namespace PBL3_GiaBao.DAL
 {
     class DAL_PhongChieu
     {
-        private static QLRP7Entities db = new QLRP7Entities();
+        private static QLRP8Entities db = new QLRP8Entities();
 
         // Design Pattern
         #region Design Pattern
@@ -103,8 +103,8 @@ namespace PBL3_GiaBao.DAL
         {
             foreach(string maPhong in maPhongs)
             {
-                var d = db.DinhDangPhims.Where(ddp => ddp.idPhongChieu == maPhong);
-                db.DinhDangPhims.RemoveRange(d);
+                var d = db.DinhDangPhim.Where(ddp => ddp.idPhongChieu == maPhong);
+                db.DinhDangPhim.RemoveRange(d);
                 var p = db.PhongChieu.Find(maPhong);
                 db.PhongChieu.Remove(p);
             }

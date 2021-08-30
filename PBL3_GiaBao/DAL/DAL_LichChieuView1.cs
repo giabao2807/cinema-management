@@ -10,7 +10,7 @@ namespace PBL3_GiaBao.DAL
 {
     class DAL_LichChieuView1
     {
-        private static QLRP7Entities db = new QLRP7Entities();
+        private static QLRP8Entities db = new QLRP8Entities();
 
         #region Design Pattern
         private static DAL_LichChieuView1 _Instance;
@@ -36,22 +36,23 @@ namespace PBL3_GiaBao.DAL
         #endregion
 
         #region GetData
-        public List<LichChieuView1> getAllLichChieuView()
+        public List<LichChieuView1> GetLichChieuViewNoExpried()
         {
             List<LichChieuView1> lichChieuViews = new List<LichChieuView1>();
-
             var data = db.LichChieu.Where(lc => lc.idDinhDang == lc.DinhDangPhim.id
-            && lc.DinhDangPhim.idPhim == lc.DinhDangPhim.Phim.id
-            && lc.DinhDangPhim.idPhongChieu == lc.DinhDangPhim.PhongChieu.id
-            && lc.DinhDangPhim.PhongChieu.idManHinh == lc.DinhDangPhim.PhongChieu.LoaiManHinh.id)
-                .Select(lc => new LichChieuView1
-                {
-                    MaLichChieu = lc.id,
-                    MaPhong = lc.DinhDangPhim.PhongChieu.id,
-                    TenPhim = lc.DinhDangPhim.Phim.TenPhim,
-                    ManHinh = lc.DinhDangPhim.PhongChieu.LoaiManHinh.TenMH,
-                    ThoiGianChieu = lc.ThoiGianChieu
-                });
+           && lc.DinhDangPhim.idPhim == lc.DinhDangPhim.Phim.id
+           && lc.DinhDangPhim.idPhongChieu == lc.DinhDangPhim.PhongChieu.id
+           && lc.DinhDangPhim.PhongChieu.idManHinh == lc.DinhDangPhim.PhongChieu.LoaiManHinh.id
+           && lc.ThoiGianChieu > DateTime.Now)
+               .Select(lc => new LichChieuView1
+               {
+                   MaLichChieu = lc.id,
+                   MaPhong = lc.DinhDangPhim.PhongChieu.id,
+                   TenPhim = lc.DinhDangPhim.Phim.TenPhim,
+                   ManHinh = lc.DinhDangPhim.PhongChieu.LoaiManHinh.TenMH,
+                   GiaVe = (int)lc.GiaVe,
+                   ThoiGianChieu = lc.ThoiGianChieu
+               });
             return data.ToList();
         }
         #endregion

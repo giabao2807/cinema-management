@@ -1,7 +1,7 @@
 ﻿
 namespace PBL3_GiaBao.View
 {
-    partial class fQuanlyphim
+    partial class fQuanLyPhim
     {
         /// <summary>
         /// Required designer variable.
@@ -72,7 +72,7 @@ namespace PBL3_GiaBao.View
             this.SaveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.SaveBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.SaveBtn.Location = new System.Drawing.Point(467, 740);
-            this.SaveBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SaveBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(85, 42);
             this.SaveBtn.TabIndex = 28;
@@ -84,7 +84,7 @@ namespace PBL3_GiaBao.View
             // 
             this.txtMoTa.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.txtMoTa.Location = new System.Drawing.Point(115, 421);
-            this.txtMoTa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMoTa.Margin = new System.Windows.Forms.Padding(4);
             this.txtMoTa.Name = "txtMoTa";
             this.txtMoTa.Size = new System.Drawing.Size(373, 34);
             this.txtMoTa.TabIndex = 27;
@@ -103,7 +103,7 @@ namespace PBL3_GiaBao.View
             // 
             this.pickImageBtn.Font = new System.Drawing.Font("Times New Roman", 9.818182F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pickImageBtn.Location = new System.Drawing.Point(163, 573);
-            this.pickImageBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pickImageBtn.Margin = new System.Windows.Forms.Padding(4);
             this.pickImageBtn.Name = "pickImageBtn";
             this.pickImageBtn.Size = new System.Drawing.Size(65, 33);
             this.pickImageBtn.TabIndex = 25;
@@ -358,7 +358,7 @@ namespace PBL3_GiaBao.View
             // 
             this.startDatePicker.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.startDatePicker.Location = new System.Drawing.Point(201, 631);
-            this.startDatePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.startDatePicker.Margin = new System.Windows.Forms.Padding(4);
             this.startDatePicker.Name = "startDatePicker";
             this.startDatePicker.Size = new System.Drawing.Size(335, 34);
             this.startDatePicker.TabIndex = 32;
@@ -367,7 +367,7 @@ namespace PBL3_GiaBao.View
             // 
             this.endDatePicker.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.endDatePicker.Location = new System.Drawing.Point(201, 686);
-            this.endDatePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.endDatePicker.Margin = new System.Windows.Forms.Padding(4);
             this.endDatePicker.Name = "endDatePicker";
             this.endDatePicker.Size = new System.Drawing.Size(335, 34);
             this.endDatePicker.TabIndex = 31;
@@ -432,7 +432,7 @@ namespace PBL3_GiaBao.View
             this.label7.TabIndex = 7;
             this.label7.Text = "Năm sản xuất";
             // 
-            // fQuanlyphim
+            // fQuanLyPhim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -441,9 +441,9 @@ namespace PBL3_GiaBao.View
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ListPhimDataGridView);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "fQuanlyphim";
+            this.Name = "fQuanLyPhim";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fQuanlyphim";
+            this.Text = "fQuanLyPhim";
             ((System.ComponentModel.ISupportInitialize)(this.phimImageBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ListPhimDataGridView)).EndInit();
             this.panel1.ResumeLayout(false);

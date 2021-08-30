@@ -9,7 +9,7 @@ namespace PBL3_GiaBao.DAL
 {
     class DAL_Phim
     {
-        private static QLRP7Entities db = new QLRP7Entities();
+        private static QLRP8Entities db = new QLRP8Entities();
 
         // Design Pattern
         #region Design Pattern
@@ -40,24 +40,24 @@ namespace PBL3_GiaBao.DAL
         #region Function
         public List<Phim> getAllPhim()
         {
-            return db.Phims.Select(phim => phim).ToList();
+            return db.Phim.Select(phim => phim).ToList();
         }
         public Phim getPhimByIdPhim(string idPhim)
         {
-            var data = db.Phims.Find(idPhim);
+            var data = db.Phim.Find(idPhim);
             return data;
         }
         public Phim getPhimByTenPhim(string tenPhim)
         {
             Phim phim = null;
-            var data = db.Phims.Where(p => p.TenPhim == tenPhim);
+            var data = db.Phim.Where(p => p.TenPhim == tenPhim);
             if (data.Count() > 0) phim = data.FirstOrDefault();
             return phim;
         }
         public List<Phim> getPhimByListDDP(List<DinhDangPhim> list)
         {
             List<Phim> s = new List<Phim>();
-            foreach(DinhDangPhim i in list)
+            foreach (DinhDangPhim i in list)
             {
                 Phim p = getPhimByIdPhim(i.idPhim);
                 s.Add(p);
@@ -67,9 +67,9 @@ namespace PBL3_GiaBao.DAL
         public List<Phim> GetListMovieByDate_DAL(DateTime date)
         {
             var listLC = db.LichChieu.Where(p => p.ThoiGianChieu.Day.CompareTo(date.Day) == 0
-                &&  p.ThoiGianChieu.Month.CompareTo(date.Month) == 0 &&  p.ThoiGianChieu.Year.CompareTo(date.Year) == 0);
+                && p.ThoiGianChieu.Month.CompareTo(date.Month) == 0 && p.ThoiGianChieu.Year.CompareTo(date.Year) == 0);
             List<Phim> s = new List<Phim>();
-            foreach(LichChieu i in listLC)
+            foreach (LichChieu i in listLC)
             {
                 Phim p = getPhimByIdPhim(i.DinhDangPhim.idPhim);
                 bool alreadyExist = s.Contains(p);
@@ -79,7 +79,7 @@ namespace PBL3_GiaBao.DAL
         }
         public List<Phim> getPhimbyidTheLoai(string idTheLoai)
         {
-            var l = db.Phims.Where(p => p.idTheLoai.CompareTo(idTheLoai) == 0);
+            var l = db.Phim.Where(p => p.idTheLoai.CompareTo(idTheLoai) == 0);
             return l.ToList();
         }
         #endregion
@@ -88,12 +88,12 @@ namespace PBL3_GiaBao.DAL
 
         public bool themPhim(Phim s)
         {
-            db.Phims.Add(s);
+            db.Phim.Add(s);
             return db.SaveChanges() > 0;
         }
         public bool suaphim(Phim p)
         {
-            var phim = db.Phims.Where(i => i.id.Equals(p.id)).FirstOrDefault();
+            var phim = db.Phim.Where(i => i.id.Equals(p.id)).FirstOrDefault();
             phim.TenPhim = p.TenPhim;
             phim.MoTa = p.MoTa;
             phim.idTheLoai = p.idTheLoai;
@@ -107,12 +107,12 @@ namespace PBL3_GiaBao.DAL
         }
         public bool xoaphim(List<string> maphims)
         {
-            foreach(string x in maphims)
-            { 
-                var p = db.Phims.Where(phim => phim.id.CompareTo(x) == 0).FirstOrDefault();
-                db.Phims.Remove(p);
-                var s = db.DinhDangPhims.Where(ddp => ddp.idPhim.CompareTo(x) == 0).FirstOrDefault();
-                db.DinhDangPhims.Remove(s);
+            foreach (string x in maphims)
+            {
+                var p = db.Phim.Where(phim => phim.id.CompareTo(x) == 0).FirstOrDefault();
+                db.Phim.Remove(p);
+                var p1 = db.DinhDangPhim.Where(ddp => ddp.idPhim.CompareTo(x) == 0);
+                db.DinhDangPhim.RemoveRange(p1);
             }
             return db.SaveChanges() > 0;
         }

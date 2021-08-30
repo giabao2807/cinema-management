@@ -9,7 +9,7 @@ namespace PBL3_GiaBao.DAL
 {
     class DAL_TaiKhoan
     {
-        private static QLRP7Entities db = new QLRP7Entities();
+        private static QLRP8Entities db = new QLRP8Entities();
 
         // Design Pattern
         #region Design Pattern
@@ -43,7 +43,7 @@ namespace PBL3_GiaBao.DAL
         #region Login, Change Password
         public int Login(string username, string password)
         {
-            if (db.TaiKhoans.ToList().Exists(p => p.UserName.Equals(username) && p.Pass.Equals(password)))
+            if (db.TaiKhoan.ToList().Exists(p => p.UserName.Equals(username) && p.Pass.Equals(password)))
             {
                 return 1;
             }
@@ -52,7 +52,7 @@ namespace PBL3_GiaBao.DAL
         public void DoiMK(TaiKhoan tk)
         {
 
-                var tmp = db.TaiKhoans.Find(tk.idTK);
+                var tmp = db.TaiKhoan.Find(tk.idTK);
                 tmp.Pass = tk.Pass;
                 db.SaveChanges();
 
@@ -64,19 +64,19 @@ namespace PBL3_GiaBao.DAL
         #region Get Data
         public TaiKhoan GetTaiKhoanByUsername(string username)
         {
-            return db.TaiKhoans.Where(p => p.UserName.Equals(username)).FirstOrDefault();
+            return db.TaiKhoan.Where(p => p.UserName.Equals(username)).FirstOrDefault();
         }
         public List<TaiKhoan> GetTKByIDNV(string idnv)
         {
-            return db.TaiKhoans.Where(tk => tk.idNV.Equals(idnv)).ToList();
+            return db.TaiKhoan.Where(tk => tk.idNV.Equals(idnv)).ToList();
         }
         public TaiKhoan GetTaiKhoanByIDTK(string idtk)
         {
-            return db.TaiKhoans.Where(tk => tk.idTK.Equals(idtk)).FirstOrDefault();
+            return db.TaiKhoan.Where(tk => tk.idTK.Equals(idtk)).FirstOrDefault();
         }
         public TaiKhoan GetTaiKhoanByUserPass(string user, string pass)
         {
-            return db.TaiKhoans.Where(p => p.UserName.Equals(user) && p.Pass.Equals(pass)).FirstOrDefault();
+            return db.TaiKhoan.Where(p => p.UserName.Equals(user) && p.Pass.Equals(pass)).FirstOrDefault();
         }
         #endregion
 
@@ -84,12 +84,12 @@ namespace PBL3_GiaBao.DAL
         #region Add, Delete
         public void AddTKhoan(TaiKhoan tk)
         {
-                db.TaiKhoans.Add(tk);
+                db.TaiKhoan.Add(tk);
                 db.SaveChanges();
         }
         public void EditTK(TaiKhoan tk)
         {
-            var tmp = db.TaiKhoans.Find(tk.idTK);
+            var tmp = db.TaiKhoan.Find(tk.idTK);
             tmp.UserName = tk.UserName;
             tmp.LoaiTK = tk.LoaiTK;
             db.SaveChanges();
@@ -97,8 +97,8 @@ namespace PBL3_GiaBao.DAL
         public void DeleteTK(string idtk)
         {
 
-                TaiKhoan tmp = db.TaiKhoans.Where(p => p.idTK.Equals(idtk)).FirstOrDefault();
-                db.TaiKhoans.Remove(tmp);
+                TaiKhoan tmp = db.TaiKhoan.Where(p => p.idTK.Equals(idtk)).FirstOrDefault();
+                db.TaiKhoan.Remove(tmp);
                 db.SaveChanges();
         }
         #endregion
@@ -107,11 +107,11 @@ namespace PBL3_GiaBao.DAL
         #region Check
         public bool isExitTK(string user, string pass)
         {
-            return db.TaiKhoans.ToList().Exists(p => p.UserName.Equals(user) && p.Pass.Equals(pass));
+            return db.TaiKhoan.ToList().Exists(p => p.UserName.Equals(user) && p.Pass.Equals(pass));
         }
         public bool isExitTK(string idtk)
         {
-            return db.TaiKhoans.ToList().Exists(p => p.idTK.Equals(idtk));
+            return db.TaiKhoan.ToList().Exists(p => p.idTK.Equals(idtk));
         }
         #endregion
     }

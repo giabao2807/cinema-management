@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="QLRP8ModelStoreContainer" CdmEntityContainer="QLRP7Entities">
-    <EntitySetMapping Name="DinhDangPhims">
+  <EntityContainerMapping StorageEntityContainer="QLRP8ModelStoreContainer" CdmEntityContainer="QLRP8Entities">
+    <EntitySetMapping Name="DinhDangPhim">
       <EntityTypeMapping TypeName="QLRP8Model.DinhDangPhim">
         <MappingFragment StoreEntitySet="DinhDangPhim">
           <ScalarProperty Name="id" ColumnName="id" />
@@ -10,7 +10,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="LichChieux">
+    <EntitySetMapping Name="LichChieu">
       <EntityTypeMapping TypeName="QLRP8Model.LichChieu">
         <MappingFragment StoreEntitySet="LichChieu">
           <ScalarProperty Name="id" ColumnName="id" />
@@ -21,7 +21,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="LoaiManHinhs">
+    <EntitySetMapping Name="LoaiManHinh">
       <EntityTypeMapping TypeName="QLRP8Model.LoaiManHinh">
         <MappingFragment StoreEntitySet="LoaiManHinh">
           <ScalarProperty Name="id" ColumnName="id" />
@@ -29,7 +29,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="NhanViens">
+    <EntitySetMapping Name="NhanVien">
       <EntityTypeMapping TypeName="QLRP8Model.NhanVien">
         <MappingFragment StoreEntitySet="NhanVien">
           <ScalarProperty Name="id" ColumnName="id" />
@@ -41,7 +41,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Phims">
+    <EntitySetMapping Name="Phim">
       <EntityTypeMapping TypeName="QLRP8Model.Phim">
         <MappingFragment StoreEntitySet="Phim">
           <ScalarProperty Name="id" ColumnName="id" />
@@ -58,7 +58,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="PhongChieux">
+    <EntitySetMapping Name="PhongChieu">
       <EntityTypeMapping TypeName="QLRP8Model.PhongChieu">
         <MappingFragment StoreEntitySet="PhongChieu">
           <ScalarProperty Name="id" ColumnName="id" />
@@ -71,7 +71,18 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="TaiKhoans">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="QLRP8Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaiKhoan">
       <EntityTypeMapping TypeName="QLRP8Model.TaiKhoan">
         <MappingFragment StoreEntitySet="TaiKhoan">
           <ScalarProperty Name="idTK" ColumnName="idTK" />
@@ -82,7 +93,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="TheLoais">
+    <EntitySetMapping Name="TheLoai">
       <EntityTypeMapping TypeName="QLRP8Model.TheLoai">
         <MappingFragment StoreEntitySet="TheLoai">
           <ScalarProperty Name="id" ColumnName="id" />
@@ -91,7 +102,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Ves">
+    <EntitySetMapping Name="Ve">
       <EntityTypeMapping TypeName="QLRP8Model.Ve">
         <MappingFragment StoreEntitySet="Ve">
           <ScalarProperty Name="id" ColumnName="id" />

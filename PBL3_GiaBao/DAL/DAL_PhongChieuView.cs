@@ -10,7 +10,7 @@ namespace PBL3_GiaBao.DAL
 {
     class DAL_PhongChieuView
     {
-        private static QLRP7Entities db = new QLRP7Entities();
+        private static QLRP8Entities db = new QLRP8Entities();
 
         #region Design Pattern
         private static DAL_PhongChieuView _Instance;

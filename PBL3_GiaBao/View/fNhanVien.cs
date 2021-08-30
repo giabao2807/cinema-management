@@ -181,7 +181,7 @@ namespace PBL3_GiaBao.View
             if(dataGridView1.SelectedRows.Count==1)
             {
                 string idnv = dataGridView1.SelectedRows[0].Cells["id"].Value.ToString();
-                fAccount account = new fAccount(idnv,TKhoanLogin);
+                fTaiKhoan account = new fTaiKhoan(idnv,TKhoanLogin);
                 account.Show();
                 account.FormClosed += Account_FormClosed;
                 this.Hide();
@@ -199,23 +199,25 @@ namespace PBL3_GiaBao.View
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtCMND.Enabled = false;
-            txtDiachi.Enabled = false;
-            txtMaNV.Enabled = false;
-            txtSDT.Enabled = false;
-            txtTenNV.Enabled = false;
-            string idnv = dataGridView1.Rows[e.RowIndex].Cells["id"].Value.ToString();
-            NhanVien nv = BLL.BLL_NhanVien.Instance.GetNVByIDNV(idnv);
-            txtMaNV.Enabled = false;
-            btSave.Hide();
-            btClear.Show();
-
-            txtMaNV.Text = nv.id;
-            txtTenNV.Text = nv.HoTen;
-            txtDiachi.Text = nv.DiaChi;
-            txtCMND.Text = nv.CMND.ToString();
-            txtSDT.Text = nv.SDT;
-            dtNS.Value = nv.NgaySinh;
+            if (e.RowIndex != -1)
+            {
+                txtCMND.Enabled = false;
+                txtDiachi.Enabled = false;
+                txtMaNV.Enabled = false;
+                txtSDT.Enabled = false;
+                txtTenNV.Enabled = false;
+                string idnv = dataGridView1.Rows[e.RowIndex].Cells["id"].Value.ToString();
+                NhanVien nv = BLL.BLL_NhanVien.Instance.GetNVByIDNV(idnv);
+                txtMaNV.Enabled = false;
+                btSave.Hide();
+                btClear.Show();
+                txtMaNV.Text = nv.id;
+                txtTenNV.Text = nv.HoTen;
+                txtDiachi.Text = nv.DiaChi;
+                txtCMND.Text = nv.CMND.ToString();
+                txtSDT.Text = nv.SDT;
+                dtNS.Value = nv.NgaySinh;
+            }
         }
     }
 }

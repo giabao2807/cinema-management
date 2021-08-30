@@ -20,24 +20,23 @@ namespace PBL3_GiaBao.View
             LoadAllListShowTimes();
 
         }
-
+        // get all list lich chieu
         void LoadAllListShowTimes()
         {
             dtgrLichChieu.DataSource = "";
-            List<LichChieu> allListShowTime = BLL_LichChieu.Instance.getAllLichChieu(); LichChieu l = new LichChieu();
+            List<LichChieu> allListShowTime = BLL_LichChieu.Instance.getAllLichChieu(); 
             dtgrLichChieu.DataSource = allListShowTime;
             this.dtgrLichChieu.Columns["DinhDangPhim"].Visible = false;
-            //this.dtgrLichChieu.Columns["PhongChieu"].Visible = false;
-            this.dtgrLichChieu.Columns["Ves"].Visible = false;
+            this.dtgrLichChieu.Columns["Ve"].Visible = false;
         }
-
+        // get list ve theo lich chieu
         void LoadTicketsByShowTimes(string showTimesID)
         {
             List<Ve> listTicket = BLL_Ve.Instance.GetListTicketsByShowTimes(showTimesID);
             dtgvVe.DataSource = listTicket;
             this.dtgvVe.Columns["LichChieu"].Visible = false;
         }
-
+        // btn tạo ve
         private void btnAddVe_Click(object sender, EventArgs e)
         {
             if (dtgrLichChieu.SelectedRows.Count > 0)
@@ -57,34 +56,34 @@ namespace PBL3_GiaBao.View
                 MessageBox.Show("BẠN CHƯA CHỌN LỊCH CHIẾU ĐỂ TẠO!!!", "THÔNG BÁO");
             }
         }
-
+        //  tạo vé theo từng lịch chiếu
         void AutoCreateTicketsByShowTimes(LichChieu showTimes)
         {
-            int result = 0;
-            DinhDangPhim dinhDangPhim = BLL_DinhDangPhim.Instance.GetDinhDangPhimByMaDinhDang(showTimes.idDinhDang);
-            PhongChieu cinema = BLL_PhongChieu.Instance.GetPhongChieuByMaPhong(dinhDangPhim.idPhongChieu);
-            int Row = cinema.SoHangGhe;
-            int Column = cinema.SoGheMotHang;
-            for (int i = 0; i < Row; i++)
+            try
             {
-                int temp = i + 65;
-                char nameRow = (char)(temp);
-                for (int j = 1; j <= Column; j++)
+                DinhDangPhim dinhDangPhim = BLL_DinhDangPhim.Instance.GetDinhDangPhimByMaDinhDang(showTimes.idDinhDang);
+                PhongChieu cinema = BLL_PhongChieu.Instance.GetPhongChieuByMaPhong(dinhDangPhim.idPhongChieu);
+                int Row = cinema.SoHangGhe;
+                int Column = cinema.SoGheMotHang;
+                for (int i = 0; i < Row; i++)
                 {
-                    string seatName = nameRow.ToString() + j;
-                    result += BLL_Ve.Instance.InsertTicketByShowTimes(showTimes.id, seatName);
+                    int temp = i + 65;
+                    char nameRow = (char)(temp);
+                    for (int j = 1; j <= Column; j++)
+                    {
+                        string seatName = nameRow.ToString() + j;
+                        BLL_Ve.Instance.InsertTicketByShowTimes(showTimes.id, seatName);
+                    }
                 }
-            }
-            if (result == Row * Column)
-            {
-                int ret = BLL_LichChieu.Instance.UpdateStatusShowTimes(showTimes.id, 1);
-                if (ret > 0)
+                if (BLL_LichChieu.Instance.UpdateStatusShowTimes(showTimes.id, 1))
                     MessageBox.Show("TẠO VÉ TỰ ĐỘNG THÀNH CÔNG!", "THÔNG BÁO");
             }
-            else
+            catch(Exception)
+            {
                 MessageBox.Show("TẠO VÉ TỰ ĐỘNG THẤT BẠI!", "THÔNG BÁO");
+            }
         }
-
+        // btn delete ve
         private void btnRemoveVe_Click(object sender, EventArgs e)
         {
             if (dtgrLichChieu.SelectedRows.Count > 0)
@@ -95,53 +94,59 @@ namespace PBL3_GiaBao.View
                     MessageBox.Show("LỊCH CHIẾU NÀY CHƯA ĐƯỢC TẠO VÉ!!!", "THÔNG BÁO");
                     return;
                 }
-                DeleteTicketsByShowTimes(showTimes);
-                LoadAllListShowTimes();
-                LoadTicketsByShowTimes(showTimes.id);
+                if(BLL_Ve.Instance.IsExitLichChieu(showTimes.id))
+                {
+                    MessageBox.Show("LỊCH CHIẾU NÀY ĐÃ CÓ VÉ ĐƯỢC BÁN RA!!!", "THÔNG BÁO");
+                    return;
+                } else
+                {
+                    DeleteTicketsByShowTimes(showTimes);
+                    LoadAllListShowTimes();
+                    LoadTicketsByShowTimes(showTimes.id);
+                }
             }
             else
             {
                 MessageBox.Show("BẠN CHƯA CHỌN LỊCH CHIẾU ĐỂ XÓA!!!", "THÔNG BÁO");
             }
         }
-
+        //  delete ve theo từng lịch chiếu
         private void DeleteTicketsByShowTimes(LichChieu showTimes)
         {
-            DinhDangPhim dinhDangPhim = BLL_DinhDangPhim.Instance.GetDinhDangPhimByMaDinhDang(showTimes.idDinhDang);
-            PhongChieu cinema = BLL_PhongChieu.Instance.GetPhongChieuByMaPhong(dinhDangPhim.idPhongChieu);
-            int Row = cinema.SoHangGhe;
-            int Column = cinema.SoGheMotHang;
-            int result = BLL_Ve.Instance.DeleteTicketsByShowTimes(showTimes.id);
-            if (result == Row * Column)
+            try
             {
-                int ret = BLL_LichChieu.Instance.UpdateStatusShowTimes(showTimes.id, 0);
-                if (ret > 0)
+                DinhDangPhim dinhDangPhim = BLL_DinhDangPhim.Instance.GetDinhDangPhimByMaDinhDang(showTimes.idDinhDang);
+                PhongChieu cinema = BLL_PhongChieu.Instance.GetPhongChieuByMaPhong(dinhDangPhim.idPhongChieu);
+                int Row = cinema.SoHangGhe;
+                int Column = cinema.SoGheMotHang;
+                BLL_Ve.Instance.DeleteTicketsByShowTimes(showTimes.id);
+                if (BLL_LichChieu.Instance.UpdateStatusShowTimes(showTimes.id, 0))
                     MessageBox.Show("XÓA TẤT CẢ CÁC VÉ CỦA LỊCH CHIẾU ID=" + showTimes.id + " THÀNH CÔNG!", "THÔNG BÁO");
             }
-            else
+            catch(Exception) {
                 MessageBox.Show("XÓA TẤT CẢ CÁC VÉ CỦA LỊCH CHIẾU ID=" + showTimes.id + " THẤT BẠI!", "THÔNG BÁO");
+            }
         }
-
+        // btn xem all lich chieu
         private void btnShowAll_Click(object sender, EventArgs e)
         {
             LoadAllListShowTimes();
         }
-
+        //btn xem lich chieu chua tao ve
         private void btnShowLichChieuChuatao_Click(object sender, EventArgs e)
         {
             LoadListShowTimesNotCreateTickets();
         }
-
+        // get list lich chieu chua tao ve
         private void LoadListShowTimesNotCreateTickets()
         {
             dtgrLichChieu.DataSource = "";
             List<LichChieu> allListShowTime = BLL_LichChieu.Instance.GetListShowTimesNotCreateTickets();
             dtgrLichChieu.DataSource = allListShowTime;
             this.dtgrLichChieu.Columns["DinhDangPhim"].Visible = false;
-            //this.dtgrLichChieu.Columns["PhongChieu"].Visible = false;
-            this.dtgrLichChieu.Columns["Ves"].Visible = false;
+            this.dtgrLichChieu.Columns["Ve"].Visible = false;
         }
-
+        // btn xem tat ca ve da ban theo lich chieu
         private void btnShowTicketBought_Click(object sender, EventArgs e)
         {
             if (dtgrLichChieu.SelectedRows.Count > 0)
@@ -154,14 +159,14 @@ namespace PBL3_GiaBao.View
                 MessageBox.Show("BẠN CHƯA CHỌN LỊCH CHIẾU ĐỂ XEM!!!", "THÔNG BÁO");
             }
         }
-
+        // get list ve da ban
         void LoadTicketsBoughtByShowTimes(string showTimesID)
         {
             List<Ve> listTicket = BLL_Ve.Instance.GetListTicketsBoughtByShowTimes(showTimesID);
             dtgvVe.DataSource = listTicket;
             this.dtgvVe.Columns["LichChieu"].Visible = false;
         }
-
+        // btn xem tat ca ve theo lich chieu
         private void btnShowAllTicketByLichChieu_Click(object sender, EventArgs e)
         {
             if (dtgrLichChieu.SelectedRows.Count > 0)
@@ -174,7 +179,7 @@ namespace PBL3_GiaBao.View
                 MessageBox.Show("BẠN CHƯA CHỌN LỊCH CHIẾU ĐỂ XEM!!!", "THÔNG BÁO");
             }
         }
-
+        // btn dong
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();

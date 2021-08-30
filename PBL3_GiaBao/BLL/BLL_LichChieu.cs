@@ -55,18 +55,18 @@ namespace PBL3_GiaBao.BLL
 
         // Thêm, sửa , xóa
         #region Add, Update, Delete
-        public bool addLichChieu(string maLichChieu, string maPhong, string maDinhDang, DateTime time)
+        public bool addLichChieu(string maLichChieu, string maDinhDang, int giaVe ,DateTime time)
         {
-            return DAL_LichChieu.Instance.addLichChieu(maLichChieu, maDinhDang, time);
+            return DAL_LichChieu.Instance.addLichChieu(maLichChieu, maDinhDang, giaVe, time);
         }
 
-        public int UpdateStatusShowTimes(string showTimesID, int status)
+        public bool UpdateStatusShowTimes(string showTimesID, int status)
         {
             return DAL_LichChieu.Instance.UpdateStatusShowTimes_DAL(showTimesID, status);
         }
-        public bool updateLichChieu(string maLichChieu, string maPhong, string maDinhDang, DateTime time)
+        public bool updateLichChieu(string maLichChieu, string maDinhDang, int giaVe ,DateTime time)
         {
-            return DAL_LichChieu.Instance.updateLichChieu(maLichChieu, maDinhDang, time);
+            return DAL_LichChieu.Instance.updateLichChieu(maLichChieu, maDinhDang, giaVe , time);
         }
         public bool deleteLichChieu(string maLichChieu)
         {
@@ -98,10 +98,6 @@ namespace PBL3_GiaBao.BLL
         public List<LichChieuView> LoadListShowTimeByFilm(string formatMovieID, DateTime date)
         {
             return DAL_LichChieu.Instance.LoadListShowTimeByFilm( formatMovieID , date);
-        }
-        public void CheckLichChieuExpired()
-        {
-            DAL_LichChieu.Instance.CheckLichChieuExpried();
         }
         public bool checkDataLichChieu(string maPhongChieu, string maPhim, DateTime time)
         {

@@ -9,7 +9,7 @@ namespace PBL3_GiaBao.DAL
 {
     class DAL_DinhDangPhim
     {
-        private static QLRP7Entities db = new QLRP7Entities();
+        private static QLRP8Entities db = new QLRP8Entities();
 
         // Design Pattern
         #region Design Pattern
@@ -40,28 +40,28 @@ namespace PBL3_GiaBao.DAL
         #region Function
         public List<DinhDangPhim> getAllDinhDangPhim()
         {
-            return db.DinhDangPhims.Select(ddp => ddp).ToList();
+            return db.DinhDangPhim.Select(ddp => ddp).ToList();
         }
         public DinhDangPhim GetDinhDangPhimByIdPhong(string maPhong)
         {
             DinhDangPhim dinhDangPhim = null;
-            var data = db.DinhDangPhims.Where(ddp => ddp.idPhongChieu == maPhong);
+            var data = db.DinhDangPhim.Where(ddp => ddp.idPhongChieu == maPhong);
             if (data.Count() > 0) dinhDangPhim = data.FirstOrDefault();
             return dinhDangPhim;
         }
         public List<DinhDangPhim> GetDinhDangPhimByMaPhong(string maPhong)
         {
-            var data = db.DinhDangPhims.Where(ddp => ddp.idPhongChieu == maPhong);
+            var data = db.DinhDangPhim.Where(ddp => ddp.idPhongChieu == maPhong);
             return data.ToList();
         }
         public DinhDangPhim GetDinhDangPhimByMaDinhDang(string maDinhDang)
         {
-            return db.DinhDangPhims.Find(maDinhDang);
+            return db.DinhDangPhim.Find(maDinhDang);
         }
 
         public List<DinhDangPhim> GetListFormatMovieByMovie_DAL(string movieID)
         {
-            var l = db.DinhDangPhims.Where(p => p.idPhim == movieID);
+            var l = db.DinhDangPhim.Where(p => p.idPhim == movieID);
             return l.ToList();
         }
         public List<DinhDangPhim> GetListFormatMovieByMovieAndDate_DAL(string movieID, DateTime date)
@@ -80,18 +80,18 @@ namespace PBL3_GiaBao.DAL
 
         public List<String> getMaDinhDangbyMaPhim(string x)
         {
-            var l = db.DinhDangPhims.Where(p => p.idPhim.CompareTo(x) == 0).Select(p => p.id).ToList();
+            var l = db.DinhDangPhim.Where(p => p.idPhim.CompareTo(x) == 0).Select(p => p.id).ToList();
             return l;
         }
         public string getIDphongChieubyIdDinhDang(string idDinhDang)
         {
-            var l = db.DinhDangPhims.Find(idDinhDang);
+            var l = db.DinhDangPhim.Find(idDinhDang);
             return l.idPhongChieu;
         }
         public DinhDangPhim GetDinhDangPhimByMaPhongAndMaPhim(string maPhong, string maPhim)
         {
             DinhDangPhim dinhDangPhim = null;
-            var data = db.DinhDangPhims.Where(ddp => ddp.idPhim == maPhim && ddp.idPhongChieu == maPhong);
+            var data = db.DinhDangPhim.Where(ddp => ddp.idPhim == maPhim && ddp.idPhongChieu == maPhong);
             if (data.Count() > 0) dinhDangPhim = data.FirstOrDefault();
             return dinhDangPhim;
         }
@@ -102,8 +102,8 @@ namespace PBL3_GiaBao.DAL
         {
             foreach (string mp in maPhims)
             {
-                var l = db.DinhDangPhims.Where(p => p.idPhim.CompareTo(mp) == 0).FirstOrDefault();
-                db.DinhDangPhims.Remove(l);
+                var l = db.DinhDangPhim.Where(p => p.idPhim.CompareTo(mp) == 0).FirstOrDefault();
+                db.DinhDangPhim.Remove(l);
             }
             return db.SaveChanges() > 0;
         }
@@ -111,16 +111,16 @@ namespace PBL3_GiaBao.DAL
 
         public bool IsExitDinhDangPhimByMaDinhDang(string maDinhDang)
         {
-            return db.DinhDangPhims.Find(maDinhDang) != null;
+            return db.DinhDangPhim.Find(maDinhDang) != null;
         }
         public bool IsExitDinhDangPhimByMaPhimAndMaPhongChieu(string maPhim, string maPhongChieu)
         {
-            var data = db.DinhDangPhims.Where(ddp => ddp.idPhim == maPhim && ddp.idPhongChieu == maPhongChieu);
+            var data = db.DinhDangPhim.Where(ddp => ddp.idPhim == maPhim && ddp.idPhongChieu == maPhongChieu);
             return data.Count() > 0;
         }
         public bool addDinhDangPhim(string maDinhDang, string maPhongChieu, string maPhim)
         {
-            db.DinhDangPhims.Add(new DinhDangPhim
+            db.DinhDangPhim.Add(new DinhDangPhim
             {
                 id = maDinhDang,
                 idPhongChieu = maPhongChieu,
@@ -130,7 +130,7 @@ namespace PBL3_GiaBao.DAL
         }
         public bool updateDinhDangPhim(string maDinhDang, string maPhongChieu, string maPhim)
         {
-            DinhDangPhim ddp = db.DinhDangPhims.Find(maDinhDang);
+            DinhDangPhim ddp = db.DinhDangPhim.Find(maDinhDang);
             ddp.id = maDinhDang;
             ddp.idPhim = maPhim;
             ddp.idPhongChieu = maPhongChieu;
@@ -140,8 +140,8 @@ namespace PBL3_GiaBao.DAL
         {
             foreach (string maDinhDang in maDinhDangs)
             {
-                var data = db.DinhDangPhims.Find(maDinhDang);
-                db.DinhDangPhims.Remove(data);
+                var data = db.DinhDangPhim.Find(maDinhDang);
+                db.DinhDangPhim.Remove(data);
             }
             return db.SaveChanges() > 0;
         }

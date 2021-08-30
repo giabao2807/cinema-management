@@ -9,7 +9,7 @@ namespace PBL3_GiaBao.BLL
 {
     class BLL_TheLoai
     {
-        private QLRP7Entities db = new QLRP7Entities();
+        private QLRP8Entities db = new QLRP8Entities();
 
         // Design Pattern
         #region Design Pattern

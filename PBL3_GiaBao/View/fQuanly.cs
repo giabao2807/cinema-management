@@ -11,122 +11,60 @@ using System.Windows.Forms;
 
 namespace PBL3_GiaBao.View
 {
-    public partial class fQuanly : Form
+    public partial class fControl : Form
     {
         TaiKhoan TKLogin { get; set; }
-        public fQuanly(TaiKhoan TaiKhoanLogin)
+        public fControl(TaiKhoan tklogin)
         {
             InitializeComponent();
-            TKLogin = TaiKhoanLogin;
+            TKLogin = tklogin;
         }
-        private void btQLLoaiPhim_Click(object sender, EventArgs e)
+
+        private void btQuanly_Click(object sender, EventArgs e)
         {
-            fTheloai f = new fTheloai();
-            f.Show();
+            if (TKLogin.LoaiTK == 1)
+            {
+                fChucNang quanly = new fChucNang(TKLogin);
+                quanly.Show();
+                quanly.FormClosed += F_FormClosed;
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập chức năng này!", "Thông báo");
+            }
+        }
+
+        private void btBanVe_Click(object sender, EventArgs e)
+        {
+            if (TKLogin.LoaiTK == 2)
+            {
+                fBanVe banve = new fBanVe();
+                banve.Show();
+                banve.FormClosed += F_FormClosed;
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập chức năng này!", "Thông báo");
+            }
+        }
+
+        private void btDoiMK_Click(object sender, EventArgs e)
+        {
+            fDoiMatKhau f = new fDoiMatKhau(TKLogin);
             f.FormClosed += F_FormClosed;
+            f.Show();
             this.Hide();
         }
 
-        private void btQLPhim_Click(object sender, EventArgs e)
-        {
-            fQuanlyphim f = new fQuanlyphim();
-            f.Show();
-            f.FormClosed += F_FormClosed;
-            this.Hide();
-        }
-
-        private void btQLPhongChieu_Click(object sender, EventArgs e)
-        {
-            fPhongChieu f = new fPhongChieu();
-            f.Show();
-            f.FormClosed += F_FormClosed;
-            this.Hide();
-        }
-
-        private void btQLNVien_Click(object sender, EventArgs e)
-        {
-            fNhanVien f = new fNhanVien(TKLogin);
-            f.Show();
-            f.FormClosed += F_FormClosed;
-            this.Hide();
-
-        }
-
-        private void F_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            this.Show();
-        }
-
-        private void btQLLChieu_Click(object sender, EventArgs e)
-        {
-            fLichChieu f = new fLichChieu();
-            f.Show();
-            f.FormClosed += F_FormClosed;
-            this.Hide();
-        }
-
-        private void btDXuat_Click(object sender, EventArgs e)
+        private void btThoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void btQLVe_Click(object sender, EventArgs e)
+        private void F_FormClosed(object sender, FormClosedEventArgs e)
         {
-            fQuanLyVe f = new fQuanLyVe();
-            f.Show();
-            f.FormClosed += F_FormClosed;
-            this.Hide();
-        }
-
-        private void btQLVe_MouseHover(object sender, EventArgs e)
-        {
-            Button p = (Button)sender;
-            p.BackColor = Color.Brown;
-            p.Font = new Font(p.Font,FontStyle.Bold);
-           
-
-        }
-
-        private void btQLVe_MouseLeave(object sender, EventArgs e)
-        {
-            Button p = (Button)sender;
-            p.BackColor = Color.OldLace;
-            p.Font = new Font(p.Font,FontStyle.Regular);
-            
-        }
-
-        private void btDXuat_MouseHover(object sender, EventArgs e)
-        {
-            Button p = (Button)sender;
-            p.BackColor = Color.Brown;
-        }
-
-        private void btDXuat_MouseLeave(object sender, EventArgs e)
-        {
-            Button p = (Button)sender;
-            p.BackColor = Color.OldLace;
-        }
-
-        private void btnQLDinhDangPhim_Click(object sender, EventArgs e)
-        {
-            fDinhDangPhim f = new fDinhDangPhim();
-            f.Show();
-            f.FormClosed += F_FormClosed;
-            this.Hide();
-        }
-
-        private void btnQLDinhDangPhim_MouseHover(object sender, EventArgs e)
-        {
-            Button p = (Button)sender;
-            p.BackColor = Color.Brown;
-            p.Font = new Font(p.Font, FontStyle.Bold);
-        }
-
-        private void btnQLDinhDangPhim_MouseLeave(object sender, EventArgs e)
-        {
-            Button p = (Button)sender;
-            p.BackColor = Color.OldLace;
-            p.Font = new Font(p.Font, FontStyle.Regular);
+            this.Show();
         }
     }
 }

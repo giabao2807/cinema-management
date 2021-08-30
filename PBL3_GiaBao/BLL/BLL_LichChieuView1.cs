@@ -32,9 +32,9 @@ namespace PBL3_GiaBao.BLL
         }
         #endregion
         #region Function
-        public List<LichChieuView1> getAllLichChieuViewByBLL()
+        public List<LichChieuView1> getAllLichChieuViewNoExpriedByBLL()
         {
-            return DAL.DAL_LichChieuView1.Instance.getAllLichChieuView();
+            return DAL.DAL_LichChieuView1.Instance.GetLichChieuViewNoExpried();
         }
         #endregion
     }

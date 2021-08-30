@@ -13,10 +13,10 @@ using System.Windows.Forms;
 
 namespace PBL3_GiaBao.View
 {
-    public partial class fQuanlyphim : Form
+    public partial class fQuanLyPhim : Form
     {
         static string extension = ".jpg";
-        public fQuanlyphim()
+        public fQuanLyPhim()
         {
             InitializeComponent();
             loadData();
@@ -111,19 +111,37 @@ namespace PBL3_GiaBao.View
 
         private Phim getPhimfromDataView()
         {
-            return new Phim
+            int namSX, thoiLuong;
+            if (!int.TryParse(txtNSX.Text.Trim(), out namSX) || Convert.ToInt32(txtNSX.Text.Trim()) <= 0) //Check xem co phai la so nguyen duong khong
             {
-                id = txtMaPhim.Text.Trim(),
-                TenPhim = txtTenPhim.Text.Trim(),
-                MoTa = txtMoTa.Text.Trim(),
-                ThoiLuong = Convert.ToInt32(txtThoiLuong.Text.Trim()),
-                NgayKhoiChieu = Convert.ToDateTime(startDatePicker.Value.ToString()),
-                NgayKetThuc = Convert.ToDateTime(endDatePicker.Value.ToString()),
-                SanXuat = txtQuocGia.Text.Trim(),
-                DaoDien = txtDaoDien.Text.Trim(),
-                NamSX = Convert.ToInt32(txtNSX.Text.Trim()),
-                idTheLoai = Convert.ToString(((CBBItem)cbbTheLoai.SelectedItem).Value).Trim()
-            };
+                MessageBox.Show("Du lieu cho nam san xuat khong hop le!");
+            }
+            else if (!int.TryParse(txtThoiLuong.Text.Trim(), out thoiLuong) || Convert.ToInt32(txtThoiLuong.Text.Trim()) <= 0)
+            {
+                MessageBox.Show("Du lieu cho thoi luong khong hop le!");
+            }
+            else if (Convert.ToInt32(txtNSX.Text.Trim()) > startDatePicker.Value.Year
+                || Convert.ToDateTime(startDatePicker.Value.ToString()) > Convert.ToDateTime(endDatePicker.Value.ToString()))
+            {
+                MessageBox.Show("Chon thoi gian khoi chieu - ket thuc khong phu hop!");
+            }
+            else
+            {
+                return new Phim
+                {
+                    id = txtMaPhim.Text.Trim(),
+                    TenPhim = txtTenPhim.Text.Trim(),
+                    MoTa = txtMoTa.Text.Trim(),
+                    ThoiLuong = Convert.ToInt32(txtThoiLuong.Text.Trim()),
+                    NgayKhoiChieu = Convert.ToDateTime(startDatePicker.Value.ToString()),
+                    NgayKetThuc = Convert.ToDateTime(endDatePicker.Value.ToString()),
+                    SanXuat = txtQuocGia.Text.Trim(),
+                    DaoDien = txtDaoDien.Text.Trim(),
+                    NamSX = Convert.ToInt32(txtNSX.Text.Trim()),
+                    idTheLoai = Convert.ToString(((CBBItem)cbbTheLoai.SelectedItem).Value).Trim()
+                };
+            }
+            return null;
         }
 
         private void setFirstFilm()
@@ -163,36 +181,40 @@ namespace PBL3_GiaBao.View
 
         private void ListPhimDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            SaveBtn.Hide();
-            txtMaPhim.Text = ListPhimDataGridView.Rows[e.RowIndex].Cells["id"].Value.ToString().Trim();
-            txtTenPhim.Text = ListPhimDataGridView.Rows[e.RowIndex].Cells["TenPhim"].Value.ToString().Trim();
-            txtDaoDien.Text = ListPhimDataGridView.Rows[e.RowIndex].Cells["DaoDien"].Value.ToString().Trim();
-            if (ListPhimDataGridView.Rows[e.RowIndex].Cells["MoTa"].Value != null)
+            if (e.RowIndex != -1)
             {
-                txtMoTa.Text = ListPhimDataGridView.Rows[e.RowIndex].Cells["MoTa"].Value.ToString().Trim();
-            }
-            else
-            {
-                txtMoTa.Text = "";
-            }
-            txtQuocGia.Text = ListPhimDataGridView.Rows[e.RowIndex].Cells["SanXuat"].Value.ToString().Trim();
-            txtNSX.Text = ListPhimDataGridView.Rows[e.RowIndex].Cells["NamSX"].Value.ToString().Trim();
-            txtThoiLuong.Text = ListPhimDataGridView.Rows[e.RowIndex].Cells["ThoiLuong"].Value.ToString().Trim();
-
-
-            startDatePicker.Value = Convert.ToDateTime(ListPhimDataGridView.Rows[e.RowIndex].Cells["NgayKhoiChieu"].Value.ToString().Trim());
-            endDatePicker.Value = Convert.ToDateTime(ListPhimDataGridView.Rows[e.RowIndex].Cells["NgayKetThuc"].Value.ToString().Trim());
-            foreach (Object j in cbbTheLoai.Items)
-            {
-                if (((CBBItem)j).Text.CompareTo(ListPhimDataGridView.Rows[e.RowIndex].Cells["TenTheLoai"].Value.ToString().Trim()) == 0)
+                SaveBtn.Hide();
+                txtMaPhim.Text = ListPhimDataGridView.Rows[e.RowIndex].Cells["id"].Value.ToString().Trim();
+                txtTenPhim.Text = ListPhimDataGridView.Rows[e.RowIndex].Cells["TenPhim"].Value.ToString().Trim();
+                txtDaoDien.Text = ListPhimDataGridView.Rows[e.RowIndex].Cells["DaoDien"].Value.ToString().Trim();
+                if (ListPhimDataGridView.Rows[e.RowIndex].Cells["MoTa"].Value != null)
                 {
-                    cbbTheLoai.SelectedIndex = cbbTheLoai.Items.IndexOf(j);
+                    txtMoTa.Text = ListPhimDataGridView.Rows[e.RowIndex].Cells["MoTa"].Value.ToString().Trim();
                 }
+                else
+                {
+                    txtMoTa.Text = "";
+                }
+                txtQuocGia.Text = ListPhimDataGridView.Rows[e.RowIndex].Cells["SanXuat"].Value.ToString().Trim();
+                txtNSX.Text = ListPhimDataGridView.Rows[e.RowIndex].Cells["NamSX"].Value.ToString().Trim();
+                txtThoiLuong.Text = ListPhimDataGridView.Rows[e.RowIndex].Cells["ThoiLuong"].Value.ToString().Trim();
+
+
+                startDatePicker.Value = Convert.ToDateTime(ListPhimDataGridView.Rows[e.RowIndex].Cells["NgayKhoiChieu"].Value.ToString().Trim());
+                endDatePicker.Value = Convert.ToDateTime(ListPhimDataGridView.Rows[e.RowIndex].Cells["NgayKetThuc"].Value.ToString().Trim());
+                foreach (Object j in cbbTheLoai.Items)
+                {
+                    if (((CBBItem)j).Text.CompareTo(ListPhimDataGridView.Rows[e.RowIndex].Cells["TenTheLoai"].Value.ToString().Trim()) == 0)
+                    {
+                        cbbTheLoai.SelectedIndex = cbbTheLoai.Items.IndexOf(j);
+                    }
+                }
+
+
+                setImage();
+                disableTools();
             }
 
-
-            setImage();
-            disableTools();
         }
 
         public bool canBeDeleted(List<string> maDinhDangs)
@@ -231,8 +253,8 @@ namespace PBL3_GiaBao.View
 
         private void btQLLoaiPhim_Click(object sender, EventArgs e)
         {
-            fTheloai f = new fTheloai();
-            f.d += new fTheloai.load_del(setCBB);
+            fTheLoaiPhim f = new fTheLoaiPhim();
+            f.d += new fTheLoaiPhim.load_del(setCBB);
             f.ShowDialog();
         }
 

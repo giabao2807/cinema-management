@@ -78,6 +78,7 @@
     <Compile Include="DAL\DAL_PhongChieuView.cs" />
     <Compile Include="DAL\DAL_TaiKhoan.cs" />
     <Compile Include="DAL\DAL_TheLoai.cs" />
+    <Compile Include="DAL\DAL_ThongKe.cs" />
     <Compile Include="DAL\DAL_Ve.cs" />
     <Compile Include="DTO\CBBItem.cs" />
     <Compile Include="DTO\LichChieuView.cs" />
@@ -117,6 +118,9 @@
     <Compile Include="EF\PhongChieu.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="EF\sysdiagrams.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="EF\TaiKhoan.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -128,11 +132,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\fAccount.cs">
+    <Compile Include="View\fTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fAccount.Designer.cs">
-      <DependentUpon>fAccount.cs</DependentUpon>
+    <Compile Include="View\fTaiKhoan.Designer.cs">
+      <DependentUpon>fTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="View\fDinhDangPhim.cs">
       <SubType>Form</SubType>
@@ -140,35 +144,35 @@
     <Compile Include="View\fDinhDangPhim.Designer.cs">
       <DependentUpon>fDinhDangPhim.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fFunctionDinhDangPhim.cs">
+    <Compile Include="View\fThemDinhDangPhim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fFunctionDinhDangPhim.Designer.cs">
-      <DependentUpon>fFunctionDinhDangPhim.cs</DependentUpon>
+    <Compile Include="View\fThemDinhDangPhim.Designer.cs">
+      <DependentUpon>fThemDinhDangPhim.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fFunctionLichChieu.cs">
+    <Compile Include="View\fThemLichChieu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fFunctionLichChieu.Designer.cs">
-      <DependentUpon>fFunctionLichChieu.cs</DependentUpon>
+    <Compile Include="View\fThemLichChieu.Designer.cs">
+      <DependentUpon>fThemLichChieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fControl.cs">
+    <Compile Include="View\fQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fControl.Designer.cs">
-      <DependentUpon>fControl.cs</DependentUpon>
+    <Compile Include="View\fQuanLy.Designer.cs">
+      <DependentUpon>fQuanLy.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fDoiMK.cs">
+    <Compile Include="View\fDoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fDoiMK.Designer.cs">
-      <DependentUpon>fDoiMK.cs</DependentUpon>
+    <Compile Include="View\fDoiMatKhau.Designer.cs">
+      <DependentUpon>fDoiMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fFunctionPhongChieu.cs">
+    <Compile Include="View\fThemPhongChieu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fFunctionPhongChieu.Designer.cs">
-      <DependentUpon>fFunctionPhongChieu.cs</DependentUpon>
+    <Compile Include="View\fThemPhongChieu.Designer.cs">
+      <DependentUpon>fThemPhongChieu.cs</DependentUpon>
     </Compile>
     <Compile Include="View\fLichChieu.cs">
       <SubType>Form</SubType>
@@ -176,11 +180,11 @@
     <Compile Include="View\fLichChieu.Designer.cs">
       <DependentUpon>fLichChieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fLogin.cs">
+    <Compile Include="View\fDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fLogin.Designer.cs">
-      <DependentUpon>fLogin.cs</DependentUpon>
+    <Compile Include="View\fDangNhap.Designer.cs">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="View\fNhanVien.cs">
       <SubType>Form</SubType>
@@ -194,23 +198,23 @@
     <Compile Include="View\fPhongChieu.Designer.cs">
       <DependentUpon>fPhongChieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fQuanly.cs">
+    <Compile Include="View\fChucNang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fQuanly.Designer.cs">
-      <DependentUpon>fQuanly.cs</DependentUpon>
+    <Compile Include="View\fChucNang.Designer.cs">
+      <DependentUpon>fChucNang.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fQuanlyphim.cs">
+    <Compile Include="View\fQuanLyPhim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fQuanlyphim.Designer.cs">
-      <DependentUpon>fQuanlyphim.cs</DependentUpon>
+    <Compile Include="View\fQuanLyPhim.Designer.cs">
+      <DependentUpon>fQuanLyPhim.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fTheloai.cs">
+    <Compile Include="View\fTheLoaiPhim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fTheloai.Designer.cs">
-      <DependentUpon>fTheloai.cs</DependentUpon>
+    <Compile Include="View\fTheLoaiPhim.Designer.cs">
+      <DependentUpon>fTheLoaiPhim.cs</DependentUpon>
     </Compile>
     <Compile Include="View\fQuanLyVe.cs">
       <SubType>Form</SubType>
@@ -218,17 +222,23 @@
     <Compile Include="View\fQuanLyVe.Designer.cs">
       <DependentUpon>fQuanLyVe.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fSeller.cs">
+    <Compile Include="View\fBanVe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fSeller.Designer.cs">
-      <DependentUpon>fSeller.cs</DependentUpon>
+    <Compile Include="View\fBanVe.Designer.cs">
+      <DependentUpon>fBanVe.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fTheatre.cs">
+    <Compile Include="View\fRapChieuPhim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fTheatre.Designer.cs">
-      <DependentUpon>fTheatre.cs</DependentUpon>
+    <Compile Include="View\fRapChieuPhim.Designer.cs">
+      <DependentUpon>fRapChieuPhim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\fThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\fThongKe.Designer.cs">
+      <DependentUpon>fThongKe.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -240,32 +250,32 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="View\fAccount.resx">
-      <DependentUpon>fAccount.cs</DependentUpon>
+    <EmbeddedResource Include="View\fTaiKhoan.resx">
+      <DependentUpon>fTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\fDinhDangPhim.resx">
       <DependentUpon>fDinhDangPhim.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fFunctionDinhDangPhim.resx">
-      <DependentUpon>fFunctionDinhDangPhim.cs</DependentUpon>
+    <EmbeddedResource Include="View\fThemDinhDangPhim.resx">
+      <DependentUpon>fThemDinhDangPhim.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fFunctionLichChieu.resx">
-      <DependentUpon>fFunctionLichChieu.cs</DependentUpon>
+    <EmbeddedResource Include="View\fThemLichChieu.resx">
+      <DependentUpon>fThemLichChieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fControl.resx">
-      <DependentUpon>fControl.cs</DependentUpon>
+    <EmbeddedResource Include="View\fQuanLy.resx">
+      <DependentUpon>fQuanLy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fDoiMK.resx">
-      <DependentUpon>fDoiMK.cs</DependentUpon>
+    <EmbeddedResource Include="View\fDoiMatKhau.resx">
+      <DependentUpon>fDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fFunctionPhongChieu.resx">
-      <DependentUpon>fFunctionPhongChieu.cs</DependentUpon>
+    <EmbeddedResource Include="View\fThemPhongChieu.resx">
+      <DependentUpon>fThemPhongChieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\fLichChieu.resx">
       <DependentUpon>fLichChieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fLogin.resx">
-      <DependentUpon>fLogin.cs</DependentUpon>
+    <EmbeddedResource Include="View\fDangNhap.resx">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\fNhanVien.resx">
       <DependentUpon>fNhanVien.cs</DependentUpon>
@@ -273,23 +283,26 @@
     <EmbeddedResource Include="View\fPhongChieu.resx">
       <DependentUpon>fPhongChieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fQuanly.resx">
-      <DependentUpon>fQuanly.cs</DependentUpon>
+    <EmbeddedResource Include="View\fChucNang.resx">
+      <DependentUpon>fChucNang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fQuanlyphim.resx">
-      <DependentUpon>fQuanlyphim.cs</DependentUpon>
+    <EmbeddedResource Include="View\fQuanLyPhim.resx">
+      <DependentUpon>fQuanLyPhim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\fQuanLyVe.resx">
       <DependentUpon>fQuanLyVe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fSeller.resx">
-      <DependentUpon>fSeller.cs</DependentUpon>
+    <EmbeddedResource Include="View\fBanVe.resx">
+      <DependentUpon>fBanVe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fTheatre.resx">
-      <DependentUpon>fTheatre.cs</DependentUpon>
+    <EmbeddedResource Include="View\fRapChieuPhim.resx">
+      <DependentUpon>fRapChieuPhim.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fTheloai.resx">
-      <DependentUpon>fTheloai.cs</DependentUpon>
+    <EmbeddedResource Include="View\fTheLoaiPhim.resx">
+      <DependentUpon>fTheLoaiPhim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\fThongKe.resx">
+      <DependentUpon>fThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="EF\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -315,6 +328,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BLL_ThongKe.cs" />
+    <Compile Include="DTO\ThongKeView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="EF\Model1.Context.tt">

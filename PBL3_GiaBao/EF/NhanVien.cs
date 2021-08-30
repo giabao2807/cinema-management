@@ -17,7 +17,7 @@ namespace PBL3_GiaBao.EF
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NhanVien()
         {
-            this.TaiKhoans = new HashSet<TaiKhoan>();
+            this.TaiKhoan = new HashSet<TaiKhoan>();
         }
     
         public string id { get; set; }
@@ -28,6 +28,6 @@ namespace PBL3_GiaBao.EF
         public int CMND { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TaiKhoan> TaiKhoans { get; set; }
+        public virtual ICollection<TaiKhoan> TaiKhoan { get; set; }
     }
 }

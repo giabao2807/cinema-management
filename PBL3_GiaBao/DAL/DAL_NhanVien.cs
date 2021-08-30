@@ -9,7 +9,7 @@ namespace PBL3_GiaBao.DAL
 {
     class DAL_NhanVien
     {
-        private static QLRP7Entities db = new QLRP7Entities();
+        private static QLRP8Entities db = new QLRP8Entities();
 
         // Design Pattern
         #region Design Pattern
@@ -43,11 +43,11 @@ namespace PBL3_GiaBao.DAL
         #region Get Data
         public List<NhanVien> GetAllNV()
         {
-            return db.NhanViens.Select(nv => nv).ToList(); ;
+            return db.NhanVien.Select(nv => nv).ToList(); ;
         }
         public TaiKhoan GetTaiKhoanByUsername(string username)
         {
-            return db.TaiKhoans.Where(p => p.UserName.Equals(username)).FirstOrDefault();
+            return db.TaiKhoan.Where(p => p.UserName.Equals(username)).FirstOrDefault();
         }
         #endregion
 
@@ -55,12 +55,12 @@ namespace PBL3_GiaBao.DAL
         #region Add, Edit, Delete
         public void AddNhanVien(NhanVien nv)
         {
-            db.NhanViens.Add(nv);
+            db.NhanVien.Add(nv);
             db.SaveChanges();
         }
         public void EditNhanVien(NhanVien nv)
         {
-            var tmp = db.NhanViens.Find(nv.id);
+            var tmp = db.NhanVien.Find(nv.id);
             tmp.HoTen = nv.HoTen;
             tmp.NgaySinh = nv.NgaySinh;
             tmp.SDT = nv.SDT;
@@ -70,8 +70,8 @@ namespace PBL3_GiaBao.DAL
         }
         public void DeleteNV(string manv)
         {
-            NhanVien nv = db.NhanViens.Where(p => p.id.Equals(manv)).FirstOrDefault();
-            db.NhanViens.Remove(nv);
+            NhanVien nv = db.NhanVien.Where(p => p.id.Equals(manv)).FirstOrDefault();
+            db.NhanVien.Remove(nv);
             db.SaveChanges();
         }
         #endregion

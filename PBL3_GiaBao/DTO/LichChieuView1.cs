@@ -12,6 +12,7 @@ namespace PBL3_GiaBao.DTO
         public string MaPhong { get; set; }
         public string TenPhim { get; set; }
         public string ManHinh { get; set; }
+        public int GiaVe { get; set; }
         public DateTime ThoiGianChieu { get; set; }
 
     }

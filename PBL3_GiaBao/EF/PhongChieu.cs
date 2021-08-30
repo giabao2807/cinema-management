@@ -17,7 +17,7 @@ namespace PBL3_GiaBao.EF
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public PhongChieu()
         {
-            this.DinhDangPhims = new HashSet<DinhDangPhim>();
+            this.DinhDangPhim = new HashSet<DinhDangPhim>();
         }
     
         public string id { get; set; }
@@ -29,7 +29,7 @@ namespace PBL3_GiaBao.EF
         public int SoGheMotHang { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DinhDangPhim> DinhDangPhims { get; set; }
+        public virtual ICollection<DinhDangPhim> DinhDangPhim { get; set; }
         public virtual LoaiManHinh LoaiManHinh { get; set; }
     }
 }
